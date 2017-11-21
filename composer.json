@@ -13,9 +13,9 @@
         "drupal/search_api": "^1.5",
         "drupal/tvi": "^1.0@beta",
         "drupal/taxonomy_menu": "^3.3",
-        "drupal/migrate_plus": "^2.0",
+        "drupal/migrate_plus": "^4.0",
         "drupal/migrate_source_csv": "^2.0",
-        "drupal/migrate_tools": "^2.0",
+        "drupal/migrate_tools": "^4.0",
         "drupal/image_effects": "^2.0",
         "drupal/twig_xdebug": "^1.0"
     },
