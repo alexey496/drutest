@@ -2,4 +2,5 @@ sites/*/settings*.php
 sites/default/files/php
 sites/default/files/css
 sites/default/files/js
+sites/default/files/product_variation_img
 
