@@ -20,7 +20,8 @@
         "drupal/twig_xdebug": "^1.0",
         "drupal/core_views_facets": "^1.0@alpha",
         "drupal/field_group": "^1.0",
-        "drupal/bootstrap_carousel_if": "^3.0"
+        "drupal/bootstrap_carousel_if": "^3.0",
+        "drupal/pathauto": "^1.0"
     },
     "replace": {
         "drupal/core": "^8.4"

@@ -1,0 +1,8 @@
+name: Block with facets
+description: 'Block contains all facets'
+type: module
+core: 8.x
+version: 1.0
+package: Custom
+dependencies:
+ - facets:facets

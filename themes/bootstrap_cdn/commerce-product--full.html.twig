@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<article{{ attributes.addClass('commerce-product--full') }}>
+    {# в оригинале в <article{{ attributes }}> было только это:
+    {{- product|without('variation_attributes') -}}
+    #}
+    <div>{{ product.variation_field_product_variation_img }}</div>
+    <div class="variations-wrapper">
+        <h1>{{ product.variation_title[0]['#title']['#context']['value'] }}</h1>
+        {% if product.variations[1] is defined %} {# выведем варианты товара только в том случае, если их более одного#}
+            {{ product.variations }}
+        {% endif %}
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3 class="description_title">Описание</h3>
+            {{ product.body }}
+        </div>
+        {% set parameters = product|without('title','body','variation_sku','variation_attributes','variations','variation_title','variation_field_product_variation_img') %} {# в переменную parameters запишем все поля товара которые могут содержать параметры. без лишнего #}
+        <div class="col-sm-6">
+            <h3 class="parameters_title">Параметры</h3>
+            <table class="table table-striped">
+                <tbody>
+                {% for parameter in parameters %} {# из переменной parameters нам нужны только поля типа СПИСОК - именно в таких полях хранаятся параметры товаров #}
+                    {% if 'field_param' in parameter['#field_name'] %}
+                    <tr>
+                        <td> {{ parameter['#title'] }} </td>
+                        <td> {{ parameter|without('#title') }}</td>
+                    </tr>{{ breakpoint() }}
+                    {% endif %}
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</article>
