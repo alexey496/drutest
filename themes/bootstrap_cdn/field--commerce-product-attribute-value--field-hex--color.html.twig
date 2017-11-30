@@ -53,44 +53,6 @@ label_display == 'visually_hidden' ? 'sr-only',
 ]
 %}
 
-{% if label_hidden %}
-    {% if multiple %}
-        <div{{ attributes.addClass(classes, 'field--items') }}>
-            {% for item in items %}
-                {#
-                замененная строка:
-                <div{{ attributes.addClass('field--item') }}>{{ item.content }}</div>
-                добавим визуальное отображение цвета
-                #}
-                <span{{ attributes.addClass('field--item') }} style="background-color: {{ item.content }};"></span>
-            {% endfor %}
-        </div>
-    {% else %}
-        {% for item in items %}
-            {#
-            замененная строка:
-            <div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>
-            добавим визуальное отображение цвета
-            #}
-            <span{{ attributes.addClass(classes, 'field--item') }} style="background-color: {{ item.content }};"></span>
-        {% endfor %}
-    {% endif %}
-{% else %}
-    <div{{ attributes.addClass(classes) }}>
-        <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
-        {% if multiple %}
-        <div class="field__items">
-            {% endif %}
-            {% for item in items %}
-                {#
-                замененная строка:
-                <div{{ attributes.addClass('field--item') }}>{{ item.content }}</div>
-                добавим визуальное отображение цвета
-                #}
-                <span{{ attributes.addClass('field--item') }} style="background-color: {{ item.content }};"></span>
-            {% endfor %}
-            {% if multiple %}
-        </div>
-        {% endif %}
-    </div>
-{% endif %}
+    {% for item in items %}
+        <span{{ attributes.addClass(classes)}} style="background-color: {{ item.content }};"></span>
+    {% endfor %}

@@ -1,1 +1,77 @@
-/*# sourceMappingURL=style.css.map */
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+.field--name-field-hex {
+  border: 1px solid #666;
+  height: 1.1em;
+  width: 1.1em;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.commerce-product-teaser {
+  height: 510px;
+  margin-bottom: 1em;
+  border: 1px solid #ffffff;
+}
+.commerce-product-teaser div.field--label {
+  font-weight: 300;
+  font-size: .8em;
+}
+.commerce-product-teaser div.field--item {
+  font-weight: 500;
+}
+.commerce-product-teaser .field--name-field-product-variation-img {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+}
+.commerce-product-teaser:hover {
+  border: 1px solid #e6e6e6;
+}
+.commerce-product-teaser a {
+  text-decoration: none;
+  color: inherit;
+}
+.commerce-product--full {
+  position: relative;
+}
+.commerce-product--full .variations-wrapper {
+  position: absolute;
+  top: 0;
+  padding: 0 1em 1em;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.commerce-product--full .description_title,
+.commerce-product--full .parameters_title {
+  border-bottom: 1px dotted #bfbfbf;
+}
+.carousel-control:hover {
+  color: #00b6de;
+}
+.carousel-indicators li {
+  border: 1px solid #00b6de;
+}
+.carousel-indicators .active {
+  background-color: #00b6de;
+}

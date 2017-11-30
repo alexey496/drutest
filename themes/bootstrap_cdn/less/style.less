@@ -1,0 +1,84 @@
+@brand-primary: #00b6de;
+
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 75%); // #777
+@gray-lighter:           lighten(@gray-base, 90%); // #eee
+
+
+
+@font-size-base:          14px;
+
+h1, .h1 { font-size: floor((@font-size-base * 2.6)); }
+h2, .h2 { font-size: floor((@font-size-base * 2.15)); }
+h3, .h3 { font-size: ceil((@font-size-base * 1.7)); }
+h4, .h4 { font-size: ceil((@font-size-base * 1.25)); }
+h5, .h5 { font-size: @font-size-base; }
+h6, .h6 { font-size: ceil((@font-size-base * 0.85)); }
+
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed:    floor((@font-size-base * 1.428571429)); // ~20px
+
+
+
+//** Атрибут товара "Цвет" в виде кружка
+.field--name-field-hex {
+  border: 1px solid #666;
+  height: 1.1em;
+  width: 1.1em;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+//** Тизер товара
+.commerce-product-teaser {
+  div.field--label {
+    font-weight: 300;
+    font-size: .8em;
+  }
+  div.field--item {
+    font-weight: 500;
+  }
+  .field--name-field-product-variation-img {
+    border-bottom: 1px solid @gray-lighter;
+    padding: 10px;
+  }
+  &:hover {
+    border: 1px solid @gray-lighter;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  height: 510px;
+  margin-bottom: 1em;
+  border: 1px solid #ffffff;
+}
+
+//** Товар полный вид
+.commerce-product--full {
+  position: relative;
+  .variations-wrapper {
+    position: absolute;
+    top: 0;
+    padding: 0 1em 1em;
+    background-color: fade(#ffffff, 80%);
+  }
+  .description_title, .parameters_title {
+    border-bottom: 1px dotted @gray-light;
+  }
+}
+.carousel-control {
+  &:hover {
+    color: @brand-primary;
+  }
+}
+.carousel-indicators li {
+  border: 1px solid @brand-primary;
+}
+.carousel-indicators .active {
+  background-color: @brand-primary;
+}

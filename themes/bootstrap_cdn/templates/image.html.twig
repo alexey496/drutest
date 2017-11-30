@@ -1,0 +1,24 @@
+{#
+/**
+ * @file
+ * Default theme implementation of an image.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the img tag.
+ * - style_name: (optional) The name of the image style applied.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_image()
+ */
+#}
+{# оригинальная строка :
+  theme.settings.image_responsive ? 'img-responsive',
+добавим класс выравнивания картинки по горизонтали:
+  theme.settings.image_responsive ? 'img-responsive', 'center-block',
+#}
+{% set classes = [
+  theme.settings.image_shape ? theme.settings.image_shape,
+  theme.settings.image_responsive ? 'img-responsive', 'center-block',
+] %}
+<img{{ attributes.addClass(classes) }} />

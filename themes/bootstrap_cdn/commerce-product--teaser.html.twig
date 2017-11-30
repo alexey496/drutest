@@ -20,17 +20,20 @@
  */
 #}
 <a class="link-to-product" href="{{ product_url }}">
-<article{{ attributes }}>
-    {#
-    оригинал:
-    {{- product|without('variation_attributes') -}}
-    #}
-    {{ product.variation_field_product_variation_img }} {# картинка товара #}
-    {{ product.title }} {# заголовок товара #}
-    {% for parameter in product if parameter['#field_type'] in ['list_string', 'list_integer'] %} {# из переменной product нам нужны только поля типа СПИСОК - именно в таких полях хранаятся параметры товаров #}
-        {% if loop.index < 6 %} {# ограничим вывод только 5 параметров, не более #}
-            {{ parameter }}
-        {% endif %}
-    {% endfor %}
-</article>
+    <article{{ attributes }}>
+        {#
+        оригинал:
+        {{- product|without('variation_attributes') -}}
+        #}
+        {{ product.variation_field_product_variation_img }} {# картинка товара #}
+        {{ product.title }} {# заголовок товара #}
+        {% set parameters = product|without('title','body','variation_sku','variation_attributes','variations','variation_title','variation_field_product_variation_img') %}
+        {% for parameter in parameters %} {# из переменной product нам нужны только поля типа СПИСОК - именно в таких полях хранаятся параметры товаров #}
+            {% if 'field_param' in parameter['#field_name'] %}
+                {% if loop.index < 6 %} {# ограничим вывод только 5 параметров, не более #}
+                    {{ parameter }}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </article>
 </a>

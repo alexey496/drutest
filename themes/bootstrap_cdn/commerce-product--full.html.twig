@@ -44,7 +44,7 @@
                     {% if 'field_param' in parameter['#field_name'] %}
                     <tr>
                         <td> {{ parameter['#title'] }} </td>
-                        <td> {{ parameter|without('#title') }}</td>
+                        <td> {{ parameter[0]['#context']['value'] }}</td>
                     </tr>{{ breakpoint() }}
                     {% endif %}
                 {% endfor %}
