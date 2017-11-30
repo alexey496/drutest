@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/lessc/lessc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/templates/field.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/templates/image.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product--title.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--title--default.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--full.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--teaser.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--teaser.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-attribute-value--field-hex--color.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-attribute-value--field-hex--color.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--attribute-color.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--attribute-color.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--field-product-variation-img.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--field-product-variation-img.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
-    </list>
+    <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+              <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -277,12 +264,12 @@
       <workItem from="1511884063161" duration="15284000" />
       <workItem from="1511982809175" duration="6276000" />
       <workItem from="1512030924976" duration="337000" />
-      <workItem from="1512031275640" duration="8298000" />
+      <workItem from="1512031275640" duration="8886000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40217000" />
+    <option name="totallyTimeSpent" value="40805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1549" height="912" extended-state="6" />
@@ -636,7 +623,7 @@
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--full.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
-          <caret line="43" column="70" lean-forward="true" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
           <folding />
         </state>
       </provider>
