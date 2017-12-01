@@ -40,13 +40,11 @@
             <h3 class="parameters_title">Параметры</h3>
             <table class="table table-striped">
                 <tbody>
-                {% for parameter in parameters %} {# из переменной parameters нам нужны только поля типа СПИСОК - именно в таких полях хранаятся параметры товаров #}
-                    {% if 'field_param' in parameter['#field_name'] %}
+                {% for parameter in parameters if 'field_param' in parameter['#field_name'] %} {# из переменной parameters нам нужны только поля, которые содержат в своем id 'field_param' - именно в таких полях хранаятся параметры товаров #}
                     <tr>
-                        <td> {{ parameter['#title'] }} </td>
-                        <td> {{ parameter[0]['#context']['value'] }}</td>
-                    </tr>{{ breakpoint() }}
-                    {% endif %}
+                        <td class="parameter-label"> {{ parameter['#title'] }} </td>
+                        <td class="parameter-value"> {{ parameter[0]['#context']['value'] }}</td>
+                    </tr>
                 {% endfor %}
                 </tbody>
             </table>

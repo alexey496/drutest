@@ -28,12 +28,10 @@
         {{ product.variation_field_product_variation_img }} {# картинка товара #}
         {{ product.title }} {# заголовок товара #}
         {% set parameters = product|without('title','body','variation_sku','variation_attributes','variations','variation_title','variation_field_product_variation_img') %}
-        {% for parameter in parameters if 'field_param' in parameter['#field_name']%} {# из переменной product нам нужны только поля типа СПИСОК - именно в таких полях хранаятся параметры товаров #}
-            {#{% if 'field_param' in parameter['#field_name'] %}#}
-                {% if loop.index < 6 %} {# ограничим вывод только 5 параметров, не более #}
-                    {{ parameter }}{{ breakpoint() }}
-                {% endif %}
-            {#{% endif %}#}
+        {% for parameter in parameters if 'field_param' in parameter['#field_name']%} {# из переменной product нам нужны только поля, которые содержат в своем id 'field_param' - именно в таких полях хранаятся параметры товаров #}
+            {% if loop.index < 6 %} {# ограничим вывод только 5 параметров, не более #}
+                {{ parameter }}
+            {% endif %}
         {% endfor %}
     </article>
 </a>
