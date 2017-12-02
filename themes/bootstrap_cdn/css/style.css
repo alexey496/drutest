@@ -76,6 +76,12 @@ h3 {
 .carousel-control:hover {
   color: #00b6de;
 }
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
+}
 .carousel-indicators li {
   border: 1px solid #00b6de;
 }
