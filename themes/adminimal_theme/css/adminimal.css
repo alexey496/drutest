@@ -806,3 +806,8 @@ body.adminimal {
 .adminimal .views-ui-dialog .views-override {
   background-color: #f6f6f6;
 }
+
+/* это мое */
+.paragraphs-subform .field--name-field-parameter-label, .paragraphs-subform .field--name-field-parameter-value {
+  display: inline-block;
+}

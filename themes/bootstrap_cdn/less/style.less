@@ -24,11 +24,12 @@ h6, .h6 { font-size: ceil((@font-size-base * 0.85)); }
 
 body {
   font-family: 'Roboto', sans-serif;
-}
-h1 {
   font-weight: 300;
 }
-h2, h3 {
+h1, h2 {
+  font-weight: 300;
+}
+h3, h4, h5 {
   font-weight: 400;
 }
 
@@ -45,6 +46,7 @@ h2, h3 {
 
 //** Тизер товара
 .commerce-product-teaser {
+  font-weight: 400;
   div.field--label {
     font-weight: 300;
     font-size: .9em;
@@ -63,6 +65,17 @@ h2, h3 {
   height: 510px;
   margin-bottom: 1em;
   border: 1px solid #ffffff;
+  &.accessories {
+    height: 400px;
+    font-weight: 300;
+  }
+}
+
+//** Страницы каталога дополнительного оборудования
+.view-accessories {
+  h2 {
+    border-bottom: 1px solid;
+  }
 }
 
 //** Товар полный вид

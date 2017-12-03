@@ -24,12 +24,15 @@ h6,
 }
 body {
   font-family: 'Roboto', sans-serif;
-}
-h1 {
   font-weight: 300;
 }
-h2,
-h3 {
+h1,
+h2 {
+  font-weight: 300;
+}
+h3,
+h4,
+h5 {
   font-weight: 400;
 }
 .field--name-field-hex {
@@ -41,6 +44,7 @@ h3 {
   vertical-align: middle;
 }
 .commerce-product-teaser {
+  font-weight: 400;
   height: 510px;
   margin-bottom: 1em;
   border: 1px solid #ffffff;
@@ -59,6 +63,13 @@ h3 {
 .commerce-product-teaser a {
   text-decoration: none;
   color: inherit;
+}
+.commerce-product-teaser.accessories {
+  height: 400px;
+  font-weight: 300;
+}
+.view-accessories h2 {
+  border-bottom: 1px solid;
 }
 .commerce-product--full {
   position: relative;
