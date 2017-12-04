@@ -1,4 +1,5 @@
 @brand-primary: #00b6de;
+@brand-primary-dark: darken(@brand-primary, 13.5%);
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -21,7 +22,7 @@ h6, .h6 { font-size: ceil((@font-size-base * 0.85)); }
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * 1.428571429)); // ~20px
 
-
+//** Общее
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -32,12 +33,22 @@ h1, h2 {
 h3, h4, h5 {
   font-weight: 400;
 }
+.alert a, .field--label, .file {
+  font-weight: inherit;
+  font-size: inherit;
+}
+a {
+  color: @brand-primary;
+}
+a:focus, a:hover {
+  color: @brand-primary-dark;
+}
 
+//** Шапка
 .region-navigation a.logo {
   margin-top: 7px;
   margin-bottom: 0;
 }
-
 
 //** Атрибут товара "Цвет" в виде кружка
 .field--name-field-hex {
@@ -86,6 +97,14 @@ h3, h4, h5 {
 
 //** Товар полный вид
 .commerce-product--full {
+  .file {
+    &>span:first-child {
+      border: none;
+    }
+    .icon, a {
+      padding-right: .5em;
+    }
+  }
   position: relative;
   .variations-wrapper {
     position: absolute;
@@ -93,7 +112,7 @@ h3, h4, h5 {
     padding: 0 1em 1em;
     background-color: fade(#ffffff, 80%);
   }
-  .description_title, .parameters_title {
+  h3 {
     border-bottom: 1px dotted @gray-light;
   }
 }

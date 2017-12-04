@@ -31,14 +31,22 @@
         {% endif %}
     </div>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-5">
             <h3 class="description_title">Описание</h3>
             {{ product.body }}
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-7">
             <h3 class="parameters_title">Параметры</h3>
             {{ product.field_parameters }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-5">
+
+        </div>
+        <div class="col-sm-7">
+            {{ product.field_download }}
         </div>
     </div>
 </article>

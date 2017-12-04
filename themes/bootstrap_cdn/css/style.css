@@ -35,6 +35,19 @@ h4,
 h5 {
   font-weight: 400;
 }
+.alert a,
+.field--label,
+.file {
+  font-weight: inherit;
+  font-size: inherit;
+}
+a {
+  color: #00b6de;
+}
+a:focus,
+a:hover {
+  color: #007e99;
+}
 .region-navigation a.logo {
   margin-top: 7px;
   margin-bottom: 0;
@@ -79,14 +92,20 @@ h5 {
 .commerce-product--full {
   position: relative;
 }
+.commerce-product--full .file > span:first-child {
+  border: none;
+}
+.commerce-product--full .file .icon,
+.commerce-product--full .file a {
+  padding-right: .5em;
+}
 .commerce-product--full .variations-wrapper {
   position: absolute;
   top: 0;
   padding: 0 1em 1em;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.commerce-product--full .description_title,
-.commerce-product--full .parameters_title {
+.commerce-product--full h3 {
   border-bottom: 1px dotted #bfbfbf;
 }
 .carousel-control:hover {

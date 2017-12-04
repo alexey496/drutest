@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/apart_logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/languages/ru_6-X3hjzElYZ5BGpbL1AGVbAldxxkg2qwNy1V1DubXrM.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-download.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/apart_logo.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,28 +26,48 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+            <state relative-caret-position="180">
+              <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views-view--product-facet-search--page-1.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/views-view--product-facet-search--page-1.html.twig">
+      <file leaf-file-name="commerce-product--default--full.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views-view-unformatted--accessories--page-1.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig">
+      <file leaf-file-name="file-link.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+            <state relative-caret-position="300">
+              <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="field--field-download.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--field-download.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commerce-product--accessories--full.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,11 +119,14 @@
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/bootstrap_cdn.theme" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--paragraph--parameters.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product--field-parameters--accessories.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/paragraph--parameters.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--teaser.html.twig" />
         <option value="$PROJECT_DIR$/themes/adminimal_theme/css/adminimal.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-download.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
       </list>
     </option>
@@ -114,6 +137,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="PhpServers">
     <servers>
       <server host="drutest" id="e8e6ae87-a56a-4c90-bac7-27b2584327ea" name="drutest" use_path_mappings="true">
@@ -156,6 +180,52 @@
             <path>
               <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
               <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="file" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="less" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -213,12 +283,12 @@
       <workItem from="1512217485612" duration="10544000" />
       <workItem from="1512299574462" duration="5668000" />
       <workItem from="1512312110756" duration="5112000" />
-      <workItem from="1512393063971" duration="758000" />
+      <workItem from="1512393063971" duration="9658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90704000" />
+    <option name="totallyTimeSpent" value="99604000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1547" height="904" extended-state="6" />
@@ -233,7 +303,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -252,39 +322,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/modules/block_with_facets/src/Plugin/Block/BlockWithFacets.php</url>
-          <line>42</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
       <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--attribute-color.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product-variation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product-attribute-value.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-attribute-value--field-hex--color.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="593">
@@ -394,6 +439,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -412,13 +458,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/helloworld.module" />
-    <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/helloworld.info.yml" />
     <entry file="file://$PROJECT_DIR$/core/modules/page_cache/src/StackMiddleware/PageCache.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -477,6 +516,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -501,20 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension/src/BreakpointExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--paragraph--parameters.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -536,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--teaser.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -554,6 +573,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
           <caret line="811" column="24" lean-forward="false" selection-start-line="811" selection-start-column="24" selection-end-line="811" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -564,10 +584,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
+    <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        <state relative-caret-position="-285">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/file-link.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -580,10 +616,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension/src/BreakpointExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+        <state relative-caret-position="315">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--field-download.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="39" column="3" lean-forward="true" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
           <folding />
         </state>
       </provider>
