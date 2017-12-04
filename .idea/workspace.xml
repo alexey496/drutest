@@ -1,117 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--teaser.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product--field-parameters--accessories.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--paragraph--parameters.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/paragraph--parameters.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/php/twig/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/01_MASK4C-BL_perspective.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/02_MASK4C-BL_horizontal.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/03_MASK4C-BL_sideview.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/04_CLICKMOUNT-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/05_CLICKMOUNT_cable_management.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/05_CLICKMOUNT_spirit_level.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/07_CLICKMOUNT_lever.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/08_MASK4C-BL_click.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/AC12.8_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/AUDIOCONTROL12.8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/AUDIOSYSTEM8.8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/AUDIOSYSTEM8.8_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-2_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-2_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-3D_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-3D_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-4_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CHAMP-4_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CM608-BL_front.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/COLS41.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CONCEPT1T_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CONCEPT1T_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CONCEPT1_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/CONCEPT1_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/HM25-G.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA125_front_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA125_front_feet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA125_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA200_front_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA200_front_feet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA200_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA247_front_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA247_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA35_front_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA35_front_feet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA35_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA65_front_brackets.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA65_front_feet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MA65_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK2-BL_front.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK4-BL_0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK4T-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK6-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK6T-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK8-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MASK8F-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MP16-G.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/MP26-G.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/OVO3-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/OVO3T-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/OVO5-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/OVO5T-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PA2240BP_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PA2240BP_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PA240P_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PA240P_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PC1000RMKII.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PC1000RMKII_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PCR3000RMKIII_front_web.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PCR3000RMKIII_rear_web.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PM1122_front_without_covers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PM1122_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PM7400MKII.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PM7400MKII_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PMR4000RMKII_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PMR4000RMKII_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PR1000R_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PR1000R_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PR4000R_front_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/PR4000R_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP2250.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP2250_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP2600.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP2600_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP4120T.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP4120T_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP4240T.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/REVAMP4240T_rear_TS.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/ROCK20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/ROCK608.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SDQ5P-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SDQ5PIR-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SDQ5PIR_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SDQ5P_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUB2400-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBA165-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBA165-BL_front.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBA165-BL_front_no_grille.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBA165-BL_rear_panel.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBA165-BL_side.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/SUBLIME-BL.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/ZONE4_front_without_covers.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/styles/large/public/product_variation_img/ZONE4_rear_panel.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--teaser.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--teaser.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/adminimal_theme/css/adminimal.css" afterPath="$PROJECT_DIR$/themes/adminimal_theme/css/adminimal.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
-    </list>
+    <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="428">
-              <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+              <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -259,42 +149,6 @@
               <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
               <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="less" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -349,18 +203,17 @@
       <workItem from="1512142268950" duration="14640000" />
       <workItem from="1512217485612" duration="10544000" />
       <workItem from="1512299574462" duration="5668000" />
-      <workItem from="1512312110756" duration="4505000" />
+      <workItem from="1512312110756" duration="5112000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89339000" />
+    <option name="totallyTimeSpent" value="89946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1549" height="912" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22624435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22624435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -730,7 +583,7 @@
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
-          <caret line="64" column="16" lean-forward="true" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+          <caret line="64" column="16" lean-forward="false" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding />
         </state>
       </provider>
