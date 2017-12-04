@@ -35,6 +35,10 @@ h4,
 h5 {
   font-weight: 400;
 }
+.region-navigation a.logo {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
 .field--name-field-hex {
   border: 1px solid #666;
   height: 1.1em;
@@ -69,7 +73,8 @@ h5 {
   font-weight: 300;
 }
 .view-accessories h2 {
-  border-bottom: 1px solid;
+  font-weight: 100;
+  border-bottom: 1px dotted;
 }
 .commerce-product--full {
   position: relative;
