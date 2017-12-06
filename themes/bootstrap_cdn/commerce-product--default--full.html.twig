@@ -32,12 +32,12 @@
     </div>
     <div class="row">
         <div class="col-sm-5">
-            <h3 class="description_title">Описание</h3>
+            <h4 class="description_title">Описание</h4>
             {{ product.body }}
         </div>
         {% set parameters = product|without('title','body','variation_sku','variation_attributes','variations','variation_title','variation_field_product_variation_img') %} {# в переменную parameters запишем все поля товара которые могут содержать параметры. без лишнего #}
         <div class="col-sm-7">
-            <h3 class="parameters_title">Параметры</h3>
+            <h4 class="parameters_title">Параметры</h4>
             <table class="table table-striped">
                 <tbody>
                 {% for parameter in parameters if 'field_param' in parameter['#field_name'] %} {# из переменной parameters нам нужны только поля, которые содержат в своем id 'field_param' - именно в таких полях хранаятся параметры товаров #}
@@ -57,5 +57,9 @@
         <div class="col-sm-7">
             {{ product.field_download }}
         </div>
+    </div>
+    <div class="row">
+        <h4>Смотри также</h4>
+        {{ product.field_product_reference }}
     </div>
 </article>

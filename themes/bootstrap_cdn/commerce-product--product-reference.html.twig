@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ *
+ * Default product template.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - product: The rendered product fields.
+ *   Use 'product' to print them all, or print a subset such as
+ *   'product.title'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ product|without('title') }}
+ *   @endcode
+ * - product_entity: The product entity.
+ * - product_url: The product URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<a class="link-to-product" href="{{ product_url }}">
+    <article{{ attributes }}>
+        {#
+        оригинал:
+        {{- product|without('variation_attributes') -}}
+        #}
+        {{ product.variation_field_product_variation_img }} {# картинка товара #}
+        {{ product.title }} {# заголовок товара #}
+        {{ product.field_short_desc }}
+    </article>
+</a>

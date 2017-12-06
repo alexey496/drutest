@@ -12,7 +12,7 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 24px;
 }
 h5,
 .h5 {
@@ -27,11 +27,11 @@ body {
   font-weight: 300;
 }
 h1,
-h2 {
+h2,
+h4 {
   font-weight: 300;
 }
 h3,
-h4,
 h5 {
   font-weight: 400;
 }
@@ -117,8 +117,8 @@ a:hover {
   padding: 0 1em 1em;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.commerce-product--full h3 {
-  border-bottom: 1px dotted #bfbfbf;
+.commerce-product--full h4 {
+  border-bottom: 1px dotted;
 }
 .carousel-control:hover {
   color: #00b6de;
