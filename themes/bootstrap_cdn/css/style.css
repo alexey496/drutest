@@ -52,6 +52,18 @@ a:hover {
   margin-top: 7px;
   margin-bottom: 0;
 }
+.dropdown-menu > li > a {
+  padding: 8px 20px;
+}
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  background-color: #00b6de;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > a:hover {
+  background-color: #00b6de;
+}
 .field--name-field-hex {
   border: 1px solid #666;
   height: 1.1em;
