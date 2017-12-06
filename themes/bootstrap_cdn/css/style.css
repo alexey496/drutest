@@ -70,7 +70,7 @@ a:hover {
   width: 1.1em;
   border-radius: 50%;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-top;
 }
 .commerce-product-teaser {
   font-weight: 400;

@@ -50,16 +50,23 @@
             </table>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-5">
+    {# Если поле "Файлы" заполнено - отрендерим его #}
+    {% if product.field_download|render %}
+        <div class="row">
+            <div class="col-sm-5">
 
+            </div>
+            <div class="col-sm-7">
+                {{ product.field_download }}
+            </div>
         </div>
-        <div class="col-sm-7">
-            {{ product.field_download }}
+    {% endif %}
+    {# Если поле "Смотри также" заполнено - отрендерим его #}
+    {% if product.field_product_reference|render %}
+        <div class="row">
+            <h4>Смотри также</h4>
+            {{ product.field_product_reference }}
         </div>
-    </div>
-    <div class="row">
-        <h4>Смотри также</h4>
-        {{ product.field_product_reference }}
-    </div>
+    {% endif %}
+
 </article>

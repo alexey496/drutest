@@ -30,23 +30,23 @@
             {{ product.variations }}
         {% endif %}
     </div>
-    <div class="row">
-        <div class="col-sm-5">
-            <h4 class="description_title">Описание</h4>
-            {{ product.body }}
-        </div>
+    {# Если поле "Файлы" заполнено - отрендерим его #}
+    {% if product.field_download|render %}
+        <div class="row">
+            <div class="col-sm-5">
 
-        <div class="col-sm-7">
-            <h4 class="parameters_title">Параметры</h4>
-            {{ product.field_parameters }}
+            </div>
+            <div class="col-sm-7">
+                {{ product.field_download }}
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-5">
+    {% endif %}
+    {# Если поле "Смотри также" заполнено - отрендерим его #}
+    {% if product.field_product_reference|render %}
+        <div class="row">
+            <h4>Смотри также</h4>
+            {{ product.field_product_reference }}
+        </div>
+    {% endif %}
 
-        </div>
-        <div class="col-sm-7">
-            {{ product.field_download }}
-        </div>
-    </div>
 </article>
