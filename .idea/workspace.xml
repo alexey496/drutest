@@ -4,9 +4,8 @@
     <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="15">
+              <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -33,18 +32,18 @@
       <file leaf-file-name="commerce-product--default--full.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
+            <state relative-caret-position="488">
               <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commerce-product--accessories--full.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="commerce-product--accessories--full.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+            <state relative-caret-position="503">
+              <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -103,13 +102,13 @@
         <option value="$PROJECT_DIR$/themes/adminimal_theme/css/adminimal.css" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-download.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
       </list>
     </option>
   </component>
@@ -154,6 +153,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,8 +191,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,14 +245,15 @@
       <workItem from="1512393063971" duration="10355000" />
       <workItem from="1512470855489" duration="599000" />
       <workItem from="1512584885421" duration="5695000" />
+      <workItem from="1512644100144" duration="1091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106595000" />
+    <option name="totallyTimeSpent" value="107686000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="661" y="-4" width="1547" height="904" extended-state="6" />
+    <frame x="661" y="-4" width="1549" height="912" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22624435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -265,7 +265,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974937" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -541,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -549,7 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -557,23 +555,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="17" column="2" lean-forward="false" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="55" column="91" lean-forward="false" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,7 +562,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="19" column="3" lean-forward="false" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,30 +569,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
           <caret line="65" column="6" lean-forward="false" selection-start-line="65" selection-start-column="6" selection-end-line="65" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="203">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
+        <state relative-caret-position="488">
           <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="67" column="24" lean-forward="true" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+        <state relative-caret-position="503">
+          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
           <folding />
         </state>
       </provider>

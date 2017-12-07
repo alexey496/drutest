@@ -19,14 +19,16 @@
  * @ingroup themeable
  */
 #}
-<a class="link-to-product" href="{{ product_url }}">
-    <article{{ attributes }}>
-        {#
-        оригинал:
-        {{- product|without('variation_attributes') -}}
-        #}
-        {{ product.variation_field_product_variation_img }} {# картинка товара #}
-        {{ product.title }} {# заголовок товара #}
-        {{ product.field_short_desc }}
-    </article>
-</a>
+<div class="col-md-3 col-sm-4 commerce-product-teaser accessories text-center">
+    <a class="link-to-product" href="{{ product_url }}">
+        <article{{ attributes }}>
+            {#
+            оригинал:
+            {{- product|without('variation_attributes') -}}
+            #}
+            {{ product.variation_field_product_variation_img }} {# картинка товара #}
+            {{ product.title }} {# заголовок товара #}
+            {{ product.field_short_desc }}
+        </article>
+    </a>
+</div>

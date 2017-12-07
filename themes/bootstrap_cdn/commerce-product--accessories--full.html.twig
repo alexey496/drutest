@@ -30,6 +30,16 @@
             {{ product.variations }}
         {% endif %}
     </div>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4 class="description_title">Описание</h4>
+            {{ product.body }}
+        </div>
+        <div class="col-sm-7">
+            <h4 class="parameters_title">Параметры</h4>
+            {{ product.field_parameters }}
+        </div>
+    </div>
     {# Если поле "Файлы" заполнено - отрендерим его #}
     {% if product.field_download|render %}
         <div class="row">
