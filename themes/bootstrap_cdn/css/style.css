@@ -153,3 +153,16 @@ a:hover {
 .facet-wrapper ul li.facet-item {
   list-style: none;
 }
+#block-fulltext-search {
+  float: right!important;
+}
+#block-fulltext-search #views-exposed-form-fulltext-search-page-1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+#block-fulltext-search #views-exposed-form-fulltext-search-page-1 input#edit-search-api-fulltext {
+  width: 200px;
+}
+#block-fulltext-search #views-exposed-form-fulltext-search-page-1 button#edit-submit-fulltext-search {
+  margin-right: 0;
+}
