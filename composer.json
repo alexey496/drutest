@@ -23,7 +23,8 @@
         "drupal/bootstrap_carousel_if": "^3.0",
         "drupal/pathauto": "^1.0",
         "drupal/paragraphs": "^1.2",
-        "drupal/easy_breadcrumb": "1.x-dev"
+        "drupal/easy_breadcrumb": "1.x-dev",
+        "drupal/metatag": "^1.3"
     },
     "replace": {
         "drupal/core": "^8.4"

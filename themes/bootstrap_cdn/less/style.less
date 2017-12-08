@@ -59,6 +59,21 @@ a:focus, a:hover {
   background-color: @brand-primary;
 }
 
+//** Форма поиска в navbar
+.navbar #block-fulltext-search {
+  float: right!important;
+  #views-exposed-form-fulltext-search-page-1 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    input#edit-search-api-fulltext {
+      width: 200px;
+    }
+    button#edit-submit-fulltext-search {
+      margin-right: 0;
+    }
+  }
+}
+
 //** Атрибут товара "Цвет" в виде кружка
 .field--name-field-hex {
   border: 1px solid #666;
@@ -163,17 +178,18 @@ a:focus, a:hover {
   }
 }
 
-//** Форма поиска в navbar
-#block-fulltext-search {
-  float: right!important;
-  #views-exposed-form-fulltext-search-page-1 {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    input#edit-search-api-fulltext {
-      width: 200px;
+//** Страница поиска
+.view-display-id-page_1 {
+  .table>tbody>tr {
+    &>td {
+      vertical-align: middle;
     }
-    button#edit-submit-fulltext-search {
-      margin-right: 0;
+    td.views-field-title a {
+      font-size: ceil((@font-size-base * 1.7));
+      font-weight: 400;
+    }
+    a {
+      color: inherit;
     }
   }
 }

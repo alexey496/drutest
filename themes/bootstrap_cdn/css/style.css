@@ -64,6 +64,19 @@ a:hover {
 .dropdown-menu > .active > a:hover {
   background-color: #00b6de;
 }
+.navbar #block-fulltext-search {
+  float: right!important;
+}
+.navbar #block-fulltext-search #views-exposed-form-fulltext-search-page-1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.navbar #block-fulltext-search #views-exposed-form-fulltext-search-page-1 input#edit-search-api-fulltext {
+  width: 200px;
+}
+.navbar #block-fulltext-search #views-exposed-form-fulltext-search-page-1 button#edit-submit-fulltext-search {
+  margin-right: 0;
+}
 .field--name-field-hex {
   border: 1px solid #666;
   height: 1.1em;
@@ -153,16 +166,13 @@ a:hover {
 .facet-wrapper ul li.facet-item {
   list-style: none;
 }
-#block-fulltext-search {
-  float: right!important;
+.view-display-id-page_1 .table > tbody > tr > td {
+  vertical-align: middle;
 }
-#block-fulltext-search #views-exposed-form-fulltext-search-page-1 {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.view-display-id-page_1 .table > tbody > tr td.views-field-title a {
+  font-size: 24px;
+  font-weight: 400;
 }
-#block-fulltext-search #views-exposed-form-fulltext-search-page-1 input#edit-search-api-fulltext {
-  width: 200px;
-}
-#block-fulltext-search #views-exposed-form-fulltext-search-page-1 button#edit-submit-fulltext-search {
-  margin-right: 0;
+.view-display-id-page_1 .table > tbody > tr a {
+  color: inherit;
 }
