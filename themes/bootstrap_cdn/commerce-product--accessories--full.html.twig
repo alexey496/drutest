@@ -53,7 +53,7 @@
     {% endif %}
     {# Если поле "Смотри также" заполнено - отрендерим его #}
     {% if product.field_product_reference|render %}
-        <div class="row">
+        <div>
             <h4>Смотри также</h4>
             {{ product.field_product_reference }}
         </div>

@@ -65,7 +65,7 @@ a:focus, a:hover {
   #views-exposed-form-fulltext-search-page-1 {
     margin-top: 8px;
     margin-bottom: 8px;
-    input#edit-search-api-fulltext {
+    input#edit-fulltext {
       width: 200px;
     }
     button#edit-submit-fulltext-search {
@@ -183,6 +183,7 @@ a:focus, a:hover {
   .table>tbody>tr {
     &>td {
       vertical-align: middle;
+      height:117px;
     }
     td.views-field-title a {
       font-size: ceil((@font-size-base * 1.7));
@@ -190,6 +191,13 @@ a:focus, a:hover {
     }
     a {
       color: inherit;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+    a:hover {
+      text-decoration: none;
     }
   }
 }
