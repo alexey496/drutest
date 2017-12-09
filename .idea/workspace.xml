@@ -2,11 +2,273 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/core_search_facets.api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/core_search_facets.info.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/core_search_facets.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/FacetsQuery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/CoreSearchFacetSourceInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/Search/NodeSearchFacets.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/facets/facet_source/CoreNodeSearchFacetSource.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/facets/facet_source/CoreNodeSearchFacetSourceDeriver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/facets/query_type/CoreNodeSearchDate.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/src/Plugin/facets/query_type/CoreNodeSearchString.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/tests/core_search_facets_test_hooks/core_search_facets_test_hooks.info.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/tests/core_search_facets_test_hooks/core_search_facets_test_hooks.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/tests/src/Functional/CoreSearchFacetsTestBase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/tests/src/Functional/HooksTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/core_search_facets/tests/src/Functional/IntegrationTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/rest_facets/rest_facets.info.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/rest_facets/src/Plugin/views/style/FacetsSerializer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/rest_facets/tests/rest_view/config/install/views.view.search_api_test_views_fulltext.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/rest_facets/tests/rest_view/rest_view.info.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/rest_facets/tests/src/Functional/RestIntegrationTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/DateArrayWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/DateBasicWidget.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/DateArrayWidgetTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/translations/migrate_plus-8.x-2.0-beta2.ru.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sites/default/files/translations/migrate_tools-8.x-2.0-beta1.ru.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/phpunit.xml.dist" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/address/README.md" afterPath="$PROJECT_DIR$/modules/contrib/address/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/address/address.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/address/address.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/address/src/Plugin/migrate/cckfield/AddressField.php" afterPath="$PROJECT_DIR$/modules/contrib/address/src/Plugin/migrate/cckfield/AddressField.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/address/tests/modules/address_test/address_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/address/tests/modules/address_test/address_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/.travis.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/commerce.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/commerce.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/commerce_cart.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/commerce_cart.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/tests/modules/commerce_cart_big_pipe/commerce_cart_big_pipe.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/tests/modules/commerce_cart_big_pipe/commerce_cart_big_pipe.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/tests/modules/commerce_cart_test/commerce_cart_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/cart/tests/modules/commerce_cart_test/commerce_cart_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/commerce_checkout.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/commerce_checkout.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/commerce_checkout.libraries.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/commerce_checkout.libraries.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/src/Form/CheckoutFlowForm.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/checkout/src/Form/CheckoutFlowForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/log/commerce_log.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/log/commerce_log.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/log/tests/module/commerce_log_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/log/tests/module/commerce_log_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/commerce_order.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/commerce_order.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/commerce_order.module" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/commerce_order.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/Order.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/Order.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/OrderItem.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Entity/OrderItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Plugin/Field/FieldType/AdjustmentItemList.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Plugin/Field/FieldType/AdjustmentItemList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Plugin/Field/FieldWidget/AdjustmentDefaultWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/src/Plugin/Field/FieldWidget/AdjustmentDefaultWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/modules/commerce_order_test/commerce_order_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/modules/commerce_order_test/commerce_order_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/src/Functional/OrderAdminTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/src/Functional/OrderAdminTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/src/Functional/OrderTypeTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/order/tests/src/Functional/OrderTypeTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/commerce_payment.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/commerce_payment.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Form/PaymentGatewayForm.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Form/PaymentGatewayForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentGateway/PaymentGatewayBase.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentGateway/PaymentGatewayBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/CreditCard.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/CreditCard.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/PayPal.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/PayPal.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/PaymentMethodTypeInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentMethodType/PaymentMethodTypeInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentType/PaymentTypeInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/Plugin/Commerce/PaymentType/PaymentTypeInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/PluginForm/PaymentMethodAddForm.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/src/PluginForm/PaymentMethodAddForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/tests/modules/commerce_payment_test/commerce_payment_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment/tests/modules/commerce_payment_test/commerce_payment_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment_example/commerce_payment_example.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/payment_example/commerce_payment_example.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/commerce_price.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/commerce_price.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/src/Element/Number.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/src/Element/Number.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/src/Element/Price.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/src/Element/Price.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/commerce_price_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/commerce_price_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/commerce_price_test.routing.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/commerce_price_test.routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/src/Form/PriceTestForm.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/modules/commerce_price_test/src/Form/PriceTestForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/src/Functional/PriceElementTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/price/tests/src/Functional/PriceElementTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/commerce_product.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/commerce_product.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/commerce_product.module" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/commerce_product.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Entity/Product.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Entity/Product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Entity/ProductVariation.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Entity/ProductVariation.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Plugin/Validation/Constraint/ProductVariationSkuConstraintValidator.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/Plugin/Validation/Constraint/ProductVariationSkuConstraintValidator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/ProductViewBuilder.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/src/ProductViewBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/modules/commerce_product_access_test/commerce_product_access_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/modules/commerce_product_access_test/commerce_product_access_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/src/Kernel/ProductVariationFieldRendererTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/src/Kernel/ProductVariationFieldRendererTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/src/Kernel/ProductVariationStorageTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/product/tests/src/Kernel/ProductVariationStorageTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/commerce_promotion.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/commerce_promotion.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/src/Entity/Promotion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/tests/modules/commerce_promotion_test/commerce_promotion_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/promotion/tests/modules/commerce_promotion_test/commerce_promotion_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/store/commerce_store.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/store/commerce_store.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/commerce_tax.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/commerce_tax.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/src/Form/TaxTypeForm.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/src/Form/TaxTypeForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/src/Plugin/Commerce/TaxType/EuropeanUnionVat.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/modules/tax/src/Plugin/Commerce/TaxType/EuropeanUnionVat.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/BundleFieldDefinition.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/BundleFieldDefinition.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/BundlePluginInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/BundlePluginInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/ConfigurableFieldManager.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/ConfigurableFieldManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/ConfigurableFieldManagerInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/ConfigurableFieldManagerInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/Form/CommercePluginEntityFormBase.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/Form/CommercePluginEntityFormBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/Plugin/Commerce/EntityTrait/EntityTraitInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/Plugin/Commerce/EntityTrait/EntityTraitInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/src/Plugin/Field/FieldWidget/PluginSelectWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/src/Plugin/Field/FieldWidget/PluginSelectWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/commerce_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/commerce_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/commerce_test.services.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/commerce_test.services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/src/Plugin/Commerce/EntityTrait/First.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/src/Plugin/Commerce/EntityTrait/First.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/src/Plugin/Commerce/EntityTrait/Second.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_test/src/Plugin/Commerce/EntityTrait/Second.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_update_test/commerce_update_test.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/modules/commerce_update_test/commerce_update_test.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/src/FunctionalJavascript/PluginSelectTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/src/FunctionalJavascript/PluginSelectTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/commerce/tests/src/Kernel/ConfigurableFieldManagerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/commerce/tests/src/Kernel/ConfigurableFieldManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/README.txt" afterPath="$PROJECT_DIR$/modules/contrib/facets/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/composer.json" afterPath="$PROJECT_DIR$/modules/contrib/facets/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/config/schema/facets.processor.schema.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/config/schema/facets.processor.schema.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/config/schema/facets.widgets.schema.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/config/schema/facets.widgets.schema.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.install" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.links.action.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.links.action.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.links.menu.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.links.menu.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.module" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.routing.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/facets.services.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/facets.services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/js/dropdown-widget.js" afterPath="$PROJECT_DIR$/modules/contrib/facets/js/dropdown-widget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/js/soft-limit.js" afterPath="$PROJECT_DIR$/modules/contrib/facets/js/soft-limit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/README.txt" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/facets_range_widget.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/facets_range_widget.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/facets_range_widget.libraries.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/facets_range_widget.libraries.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/js/slider.js" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/js/slider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/processor/RangeSliderProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/processor/RangeSliderProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/processor/SliderProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/processor/SliderProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/widget/RangeSliderWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/widget/RangeSliderWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/widget/SliderWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/src/Plugin/facets/widget/SliderWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Functional/SliderIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Functional/SliderIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Unit/Plugin/widget/RangeSliderWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Unit/Plugin/widget/RangeSliderWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Unit/Plugin/widget/SliderWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_range_widget/tests/src/Unit/Plugin/widget/SliderWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.links.action.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.links.action.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.module" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/facets_summary.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Entity/FacetsSummary.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Entity/FacetsSummary.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/FacetsSummaryManager/DefaultFacetsSummaryManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/FacetsSummaryManager/DefaultFacetsSummaryManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummaryDeleteConfirmForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummaryDeleteConfirmForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummaryForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummaryForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummarySettingsForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Form/FacetsSummarySettingsForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/Block/FacetsSummaryBlockDeriver.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/Block/FacetsSummaryBlockDeriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/HideWhenNotRenderedProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/HideWhenNotRenderedProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ResetFacetsProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ResetFacetsProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowCountProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowCountProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowSummaryProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowSummaryProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowTextWhenEmptyProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Plugin/facets_summary/processor/ShowTextWhenEmptyProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/BuildProcessorInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/BuildProcessorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorPluginBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorPluginBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorPluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/src/Processor/ProcessorPluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/templates/facets-summary-facet.html.twig" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/templates/facets-summary-facet.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/tests/src/Functional/HierarchicalFacetIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/tests/src/Functional/HierarchicalFacetIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/tests/src/Functional/IntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/modules/facets_summary/tests/src/Functional/IntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Controller/FacetController.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Controller/FacetController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Controller/FacetSourceController.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Controller/FacetSourceController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Entity/Facet.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Entity/Facet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetListBuilder.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetListBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetManager/DefaultFacetManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetManager/DefaultFacetManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/FacetSourcePluginInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/FacetSourcePluginInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/FacetSourcePluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/FacetSourcePluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/SearchApiFacetSourceInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/FacetSource/SearchApiFacetSourceInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetCloneForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetCloneForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetDeleteConfirmForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetDeleteConfirmForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetSettingsForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetSettingsForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetSourceEditForm.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Form/FacetSourceEditForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Hierarchy/HierarchyPluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Hierarchy/HierarchyPluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/Block/FacetBlock.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/Block/FacetBlock.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/Block/FacetBlockDeriver.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/Block/FacetBlockDeriver.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/facet_source/SearchApiBaseFacetSource.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/facet_source/SearchApiBaseFacetSource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/facet_source/SearchApiDisplay.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/facet_source/SearchApiDisplay.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/BooleanItemProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/BooleanItemProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/DependentFacetProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/DependentFacetProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/ExcludeSpecifiedItemsProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/ExcludeSpecifiedItemsProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/ListItemProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/ListItemProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/TranslateEntityProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/TranslateEntityProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/UidToUserNameCallbackProcessor.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/processor/UidToUserNameCallbackProcessor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiDate.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiDate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiRange.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiRange.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiString.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/query_type/SearchApiString.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/url_processor/QueryString.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/url_processor/QueryString.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/ArrayWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/ArrayWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/LinksWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/LinksWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/NumericGranularWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Plugin/facets/widget/NumericGranularWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorPluginBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorPluginBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorPluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Processor/ProcessorPluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/QueryType/QueryTypePluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/QueryType/QueryTypePluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/QueryType/QueryTypeRangeBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/QueryType/QueryTypeRangeBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Result/Result.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Result/Result.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Result/ResultInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Result/ResultInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorPluginBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorPluginBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorPluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/UrlProcessor/UrlProcessorPluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginInterface.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginInterface.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginManager.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/src/Widget/WidgetPluginManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/templates/facets-item-list.html.twig" afterPath="$PROJECT_DIR$/modules/contrib/facets/templates/facets-item-list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/templates/facets-result-item.html.twig" afterPath="$PROJECT_DIR$/modules/contrib/facets/templates/facets-result-item.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/facets_custom_widget.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/facets_custom_widget.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/src/Plugin/facets/processor/TestPreQuery.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/src/Plugin/facets/processor/TestPreQuery.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/src/Plugin/facets/widget/CustomWidget.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_custom_widget/src/Plugin/facets/widget/CustomWidget.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_query_processor/facets_query_processor.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_query_processor/facets_query_processor.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_search_api_dependency/facets_search_api_dependency.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/facets_search_api_dependency/facets_search_api_dependency.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/BlockTestTrait.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/BlockTestTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/BreadcrumbIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/BreadcrumbIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/ExampleContentTrait.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/ExampleContentTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/FacetSourceTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/FacetSourceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/FacetsTestBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/FacetsTestBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/HierarchicalFacetIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/HierarchicalFacetIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/IntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/IntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/LanguageIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/LanguageIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/ProcessorIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/ProcessorIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/TestHelperTrait.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/TestHelperTrait.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/UrlIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/UrlIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/WidgetIntegrationTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Functional/WidgetIntegrationTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/FunctionalJavascript/WidgetJSTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/FunctionalJavascript/WidgetJSTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Entity/FacetFacetSourceTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Entity/FacetFacetSourceTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Entity/FacetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Entity/FacetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Plugin/query_type/SearchApiDateTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Kernel/Plugin/query_type/SearchApiDateTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ActiveWidgetOrderProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ActiveWidgetOrderProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/BooleanItemProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/BooleanItemProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/CountLimitProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/CountLimitProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/CountWidgetOrderProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/CountWidgetOrderProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/DependentFacetProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/DependentFacetProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/DisplayValueWidgetOrderProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/DisplayValueWidgetOrderProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ExcludeSpecifiedItemsProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ExcludeSpecifiedItemsProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/HideActiveItemsProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/HideActiveItemsProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/HideNonNarrowingResultProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/HideNonNarrowingResultProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ListItemProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/ListItemProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/RawValueWidgetOrderProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/RawValueWidgetOrderProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/TermWeightWidgetOrderProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/TermWeightWidgetOrderProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/TranslateEntityProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/TranslateEntityProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/UidToUserNameCallbackProcessorTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/UidToUserNameCallbackProcessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/UrlProcessorHandlerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/processor/UrlProcessorHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/query_type/SearchApiGranularTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/query_type/SearchApiGranularTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/query_type/SearchApiStringTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/query_type/SearchApiStringTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/url_processor/QueryStringTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/url_processor/QueryStringTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/CheckboxWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/CheckboxWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/DropdownWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/DropdownWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/LinksWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/LinksWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/NumericGranularWidgetTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/NumericGranularWidgetTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/WidgetTestBase.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Plugin/widget/WidgetTestBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Processor/ProcessorPluginManagerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Processor/ProcessorPluginManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/QueryType/QueryTypePluginManagerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/QueryType/QueryTypePluginManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/UrlProcessor/UrlProcessorPluginManagerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/UrlProcessor/UrlProcessorPluginManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Utility/FacetsDateHandlerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Utility/FacetsDateHandlerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Widget/WidgetPluginManagerTest.php" afterPath="$PROJECT_DIR$/modules/contrib/facets/tests/src/Unit/Widget/WidgetPluginManagerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.drush.inc" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.drush.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.info.yml" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.info.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.module" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.routing.yml" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MessageController.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MessageController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MigrationController.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MigrationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MigrationListBuilder.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Controller/MigrationListBuilder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationAddForm.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationAddForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationDeleteForm.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationDeleteForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationEditForm.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationEditForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationFormBase.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationFormBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationGroupDeleteForm.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationGroupDeleteForm.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationGroupFormBase.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/Form/MigrationGroupFormBase.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/MigrateExecutable.php" afterPath="$PROJECT_DIR$/modules/contrib/migrate_tools/src/MigrateExecutable.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/composer.json" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/AbstractLazyCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Collection.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Criteria.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Criteria.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ClosureExpressionVisitor.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/ClosureExpressionVisitor.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/Comparison.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/Comparison.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/CompositeExpression.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/Expr/CompositeExpression.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ExpressionBuilder.php" afterPath="$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ExpressionBuilder.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +282,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="653">
               <caret line="199" column="28" lean-forward="false" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="migrate_plus.info.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_plus/migrate_plus.info.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="migrate_tools.info.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.info.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-55">
+              <caret line="1979" column="40" lean-forward="false" selection-start-line="1979" selection-start-column="40" selection-end-line="1979" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -59,6 +361,9 @@
       <find>data-target</find>
       <find>h3</find>
       <find>middle</find>
+      <find>migrate</find>
+      <find>address</find>
+      <find>migrate_plus</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/modules/contrib/facets</dir>
@@ -111,6 +416,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
+        <option value="$PROJECT_DIR$/composer.lock" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -165,48 +472,13 @@
             <path>
               <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
               <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
               <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="block" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="less" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="drutest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="drutest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootstrap_cdn" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="contrib" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -270,18 +542,17 @@
       <workItem from="1512584885421" duration="5695000" />
       <workItem from="1512644100144" duration="4636000" />
       <workItem from="1512729892135" duration="2364000" />
-      <workItem from="1512817764607" duration="1670000" />
+      <workItem from="1512817764607" duration="7366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115265000" />
+    <option name="totallyTimeSpent" value="120961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1547" height="904" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22624435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22624435" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957393" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -317,48 +588,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/modules/contrib/taxonomy_menu/taxonomy_menu.routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/contrib/taxonomy_menu/src/Controller/TaxonomyMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/contrib/taxonomy_menu/src/Controller/TaxonomyMenuListBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/contrib/taxonomy_menu/config/schema/taxonomy_menu.schema.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/contrib/taxonomy_menu/src/Entity/TaxonomyMenu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/block_with_facets.module">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap/templates/menu/menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="413">
@@ -625,6 +854,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="653">
           <caret line="199" column="28" lean-forward="false" selection-start-line="199" selection-start-column="28" selection-end-line="199" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_plus/migrate_plus.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_plus/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="1979" column="40" lean-forward="false" selection-start-line="1979" selection-start-column="40" selection-end-line="1979" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="38" lean-forward="false" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_plus/migrate_plus.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_tools/migrate_tools.info.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
