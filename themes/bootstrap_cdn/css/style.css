@@ -90,7 +90,7 @@ a:hover {
 }
 .commerce-product-teaser {
   font-weight: 400;
-  height: 510px;
+  height: 480px;
   margin-bottom: 1em;
   border: 1px solid #ffffff;
 }
@@ -112,6 +112,14 @@ a:hover {
 .commerce-product-teaser.accessories {
   height: 400px;
   font-weight: 300;
+}
+.commerce-product-teaser .field--name-variations {
+  position: relative;
+  top: -10px;
+  height: 8px;
+}
+.commerce-product-teaser h3 {
+  margin-top: 0;
 }
 .view-accessories h2 {
   font-weight: 100;
@@ -152,7 +160,7 @@ a:hover {
   background-color: #00b6de;
 }
 .facet-wrapper {
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 .facet-wrapper label {
   margin: 0 0 0 .3em;
