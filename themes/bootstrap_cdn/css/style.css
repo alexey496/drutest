@@ -90,8 +90,8 @@ a:hover {
 }
 .commerce-product-teaser {
   font-weight: 400;
-  height: 480px;
-  margin-bottom: 1em;
+  height: 460px;
+  padding-bottom: 1em;
   border: 1px solid #ffffff;
 }
 .commerce-product-teaser div.field--label {
@@ -113,13 +113,8 @@ a:hover {
   height: 400px;
   font-weight: 300;
 }
-.commerce-product-teaser .field--name-variations {
-  position: relative;
-  top: -10px;
-  height: 8px;
-}
 .commerce-product-teaser h3 {
-  margin-top: 0;
+  margin-top: 10px;
 }
 .view-accessories h2 {
   font-weight: 100;
