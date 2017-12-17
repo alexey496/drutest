@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c200a56ac3a9e2638903a20eb5cb2cd",
+    "content-hash": "94be7e4ad8be88fb352ac85998f45374",
     "packages": [
         {
             "name": "ajgl/breakpoint-twig-extension",
@@ -1532,8 +1532,7 @@
             "homepage": "https://www.drupal.org/project/easy_breadcrumb",
             "support": {
                 "source": "http://cgit.drupalcode.org/easy_breadcrumb"
-            },
-            "time": "2017-10-19T20:50:06+00:00"
+            }
         },
         {
             "name": "drupal/entity",
@@ -2867,6 +2866,65 @@
             "homepage": "https://www.drupal.org/project/twig_xdebug",
             "support": {
                 "source": "http://cgit.drupalcode.org/twig_xdebug"
+            }
+        },
+        {
+            "name": "drupal/youtube",
+            "version": "1.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/youtube",
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/youtube-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "bea118474961f0e89d3aae29a20e97c6bdb6128b"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1459452539",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "guschilds",
+                    "homepage": "https://www.drupal.org/user/1468898"
+                },
+                {
+                    "name": "jenlampton",
+                    "homepage": "https://www.drupal.org/user/85586"
+                },
+                {
+                    "name": "pferlito",
+                    "homepage": "https://www.drupal.org/user/511172"
+                },
+                {
+                    "name": "zvse",
+                    "homepage": "https://www.drupal.org/user/2870933"
+                }
+            ],
+            "description": "Defines a YouTube video and thumbnail field type.",
+            "homepage": "https://www.drupal.org/project/youtube",
+            "support": {
+                "source": "http://cgit.drupalcode.org/youtube"
             }
         },
         {
@@ -6579,6 +6637,7 @@
         "drupal/tvi": 10,
         "drupal/core_views_facets": 15,
         "drupal/easy_breadcrumb": 20,
+        "drupal/youtube": 10,
         "behat/mink": 20
     },
     "prefer-stable": true,

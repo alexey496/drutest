@@ -50,15 +50,19 @@
             </table>
         </div>
     </div>
-    {# Если поле "Файлы" заполнено - отрендерим его #}
-    {% if product.field_download|render %}
+    {# Если поле "Файлы" или "YouTube" заполнено - отрендерим его #}
+    {% if (product.field_download|render) or (product.field_youtube|render) %}
         <div class="row">
+            {% if (product.field_youtube|render) %}
             <div class="col-sm-5">
-
+                {{ product.field_youtube }}
             </div>
+            {% endif %}
+            {% if (product.field_download|render) %}
             <div class="col-sm-7">
                 {{ product.field_download }}
             </div>
+            {% endif %}
         </div>
     {% endif %}
     {# Если поле "Смотри также" заполнено - отрендерим его #}
