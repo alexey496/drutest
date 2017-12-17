@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
+      <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
       <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
       <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
     </list>
@@ -20,63 +22,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="-185">
+              <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/templates/form.html.twig">
+      <file leaf-file-name="commerce-product--default--full.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            <state relative-caret-position="302">
+              <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views-exposed-form.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/templates/views-exposed-form.html.twig">
+      <file leaf-file-name="commerce-product--accessories--full.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="40" column="39" lean-forward="false" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlockWithFacets.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="65" column="7" lean-forward="false" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
-              <folding>
-                <element signature="e#214#246#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facets-item-list.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BreakpointExtension.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension/src/BreakpointExtension.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="248">
+              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -141,8 +111,6 @@
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--product-reference.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--field-product-reference.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/block.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
         <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product-variation--default--teaser.html.twig" />
@@ -158,6 +126,8 @@
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig" />
         <option value="$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
+        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig" />
       </list>
     </option>
   </component>
@@ -448,12 +418,12 @@
       <workItem from="1513369078379" duration="45000" />
       <workItem from="1513419762025" duration="199000" />
       <workItem from="1513419974151" duration="24413000" />
-      <workItem from="1513503073070" duration="10887000" />
+      <workItem from="1513503073070" duration="12188000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168228000" />
+    <option name="totallyTimeSpent" value="169529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1553" height="912" extended-state="6" />
@@ -628,13 +598,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/block--views-exposed-filter-block--fulltext-search-page-1.html.twig" />
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/contrib/migrate_plus/migrate_plus.module">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -682,13 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -805,8 +761,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="-185">
+          <caret line="160" column="41" lean-forward="true" selection-start-line="160" selection-start-column="41" selection-end-line="160" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--accessories--full.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
           <folding />
         </state>
       </provider>

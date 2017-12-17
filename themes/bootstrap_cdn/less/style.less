@@ -159,6 +159,7 @@ a:focus, a:hover {
     top: 0;
     padding: 0 1em 1em;
     background-color: fade(#ffffff, 80%);
+    z-index: 1000;
   }
   h4 {
     border-bottom: 1px dotted;
@@ -180,6 +181,11 @@ a:focus, a:hover {
 }
 .carousel-indicators .active {
   background-color: @brand-primary;
+}
+@media (max-width: 768px){
+  .commerce-product--full .variations-wrapper {
+    position: inherit;
+  }
 }
 
 //** Фасеты

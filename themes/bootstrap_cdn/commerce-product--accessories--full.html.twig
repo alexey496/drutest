@@ -23,13 +23,13 @@
     {# в оригинале в <article{{ attributes }}> было только это:
     {{- product|without('variation_attributes') -}}
     #}
-    <div>{{ product.variation_field_product_variation_img }}</div>
     <div class="variations-wrapper">
         <h1>{{ product.variation_title[0]['#title']['#context']['value'] }}</h1>
         {% if product.variations[1] is defined %} {# выведем варианты товара только в том случае, если их более одного#}
             {{ product.variations }}
         {% endif %}
     </div>
+    <div>{{ product.variation_field_product_variation_img }}</div>
     <div class="row">
         <div class="col-sm-5">
             <h4 class="description_title">Описание</h4>
