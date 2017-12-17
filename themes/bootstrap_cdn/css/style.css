@@ -56,6 +56,23 @@ a:hover {
   background-color: #00a1c5;
   border-color: #006980;
 }
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #00b6de;
+  border-color: #00b6de;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+.pagination > li > a,
+.pagination > li > span {
+  color: #00b6de;
+}
 .region-navigation a.logo {
   margin-top: 7px;
   margin-bottom: 0;

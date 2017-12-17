@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f57758b-59f3-4b64-bbda-f718260e6ec6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/templates/form.html.twig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/templates/views-exposed-form.html.twig" />
-      <change beforePath="$PROJECT_DIR$/.idea/drutest.iml" afterPath="$PROJECT_DIR$/.idea/drutest.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php" afterPath="$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php" />
-      <change beforePath="$PROJECT_DIR$/sites/default/services.yml" afterPath="$PROJECT_DIR$/sites/default/services.yml" />
       <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig" />
       <change beforePath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" afterPath="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +23,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+            <state relative-caret-position="337">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="954">
-              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+              <caret line="65" column="7" lean-forward="false" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
               <folding>
                 <element signature="e#214#246#0#PHP" expanded="true" />
               </folding>
@@ -74,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -456,12 +448,12 @@
       <workItem from="1513369078379" duration="45000" />
       <workItem from="1513419762025" duration="199000" />
       <workItem from="1513419974151" duration="24413000" />
-      <workItem from="1513503073070" duration="10262000" />
+      <workItem from="1513503073070" duration="10887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167603000" />
+    <option name="totallyTimeSpent" value="168228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="661" y="-4" width="1553" height="912" extended-state="6" />
@@ -796,7 +788,7 @@
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/facets-item-list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="295">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -804,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/modules/custom/block_with_facets/src/Plugin/Block/BlockWithFacets.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
-          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+          <caret line="65" column="7" lean-forward="false" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
           <folding>
             <element signature="e#214#246#0#PHP" expanded="true" />
           </folding>
@@ -813,8 +805,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        <state relative-caret-position="337">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>

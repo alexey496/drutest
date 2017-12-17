@@ -51,6 +51,13 @@ a:focus, a:hover {
     border-color: darken(@brand-primary-dark, 5%);
   }
 }
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: @brand-primary;
+  border-color: @brand-primary;
+}
+.pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .pagination > li > a, .pagination > li > span {
+  color: @brand-primary;
+}
 
 //** Шапка
 .region-navigation a.logo {
