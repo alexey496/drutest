@@ -1,0 +1,54 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @ingroup templates
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+  {{ q }}
+{% endif %}
+{# если это форма поиска по сайту #}
+{% if form['#id'] == 'views-exposed-form-fulltext-search-page-1' %}
+{# добавим класс input-group #}
+<div class="form--inline form-inline input-group clearfix">
+
+    {# Изменим форму поиска #}
+
+    {# Изменим input формы поиска: уберем атрибут size #}
+    {# Значение находится здесь form['fulltext']['#size'] = '32'но так как twig не может менять
+    или присваивать новое значение в массивах, приходится действовать через фильтр merge
+    #}
+    {% set fulltextvar = form['fulltext'] %}
+    {% set fulltextvar = fulltextvar|merge({'#size':''}) %}
+    {% set form = form|merge({'fulltext':fulltextvar}) %}
+
+
+    {# Изменим button формы поиска: вместо надписи сделаем иконку и добавим класс 'input-group-btn' #}
+    {# Значение класса находится здесь form['actions']['#attributes']['class'][] но так как twig не может менять
+    или присваивать новое значение в массивах, приходится действовать через фильтр merge
+    #}
+    {% set actionsvar = form.actions %}
+    {% set submitvar = actionsvar['submit'] %}
+    {% set attributesvar = actionsvar['#attributes'] %}
+    {% set classvar = attributesvar['class'] %}
+    {% set classvar = classvar|merge({1:'input-group-btn'}) %}
+    {% set attributesvar = attributesvar|merge({'class':classvar}) %}
+    {% set submitvar = submitvar|merge({'#value':'glyphicon-search', '#icon_only':'true'}) %}
+    {% set actionsvar = actionsvar|merge({'#attributes':attributesvar, 'submit':submitvar}) %}
+    {% set form = form|merge({'actions':actionsvar}) %}
+  {% else %}
+<div class="form--inline form-inline clearfix">
+  {% endif %}
+  {{ form }}
+</div>

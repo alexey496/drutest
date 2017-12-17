@@ -52,9 +52,18 @@ class BlockWithFacets extends BlockBase {
 
     //соберем массив фасетов готовый для рендера
     $processed_facets = [];
+    $index = 0;
     foreach ($facets as $key => $facet) {
       $processed_facets[$key] = $facet_manager->build($facet);
-      $processed_facets[$key][0]['#title'] = $facet->getName();// Добавим к фасете заголовок, соответствующий наименованию фасета
+      // Изменим только не пустые фасеты
+      if (!empty($processed_facets[$key][0]['#facet'])) {
+        $processed_facets[$key][0]['#title'] = $facet->getName();// Добавим к фасете заголовок, соответствующий наименованию фасета
+        // для отображения на малых устройствах оставим только первые N фасетов, остальный скроем
+        if ($index > 5) {
+          $processed_facets[$key][0]['#wrapper_attributes']['class'][] = 'hidden-xs';//создадим новый атрибут и передадим его в шаблон facets-item-list
+        }
+        $index++;
+      }
     }
 
     // Укажем конфигурацию блока

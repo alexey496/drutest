@@ -24,7 +24,7 @@
 {% if context.list_style %}
   {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
 {% endif %}
-<div class="facet-wrapper">
+<div{{ wrapper_attributes.addClass('facet-wrapper') }}">{# переменная wrapper_attributes содержит в себе класс hidden-xs для скрытия не важных фасетов. Класс формируется в модуле Block_with_facets #}
 {% if items or empty %}
   {%- if title is not empty -%}
     <h5>{{ title }}</h5>

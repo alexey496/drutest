@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+{# если это форма поиска по сайту #}
+{%  if attributes.storage['id'] == 'views-exposed-form-fulltext-search-page-1' %}
+{# Добавим к форме поиска класс .navbar-form #}
+<form{{ attributes.addClass('navbar-form') }}>
+    {% else %}
+<form{{ attributes }}>
+{% endif %}
+  {{ children }}
+</form>
