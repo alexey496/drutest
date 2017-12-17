@@ -26,6 +26,7 @@
         {{- product|without('variation_attributes') -}}
         #}
         {{ product.variation_field_product_variation_img }} {# картинка товара #}
+        {{ product.variations }}
         {{ product.title }} {# заголовок товара #}
         {{ product.field_short_desc }}
     </article>
