@@ -224,3 +224,18 @@ a:hover {
 .view-display-id-page_1 .table > tbody > tr a:hover {
   text-decoration: none;
 }
+.view-id-front_page a,
+.view-id-front_page a:hover,
+.view-id-front_page a:focus {
+  text-decoration: none;
+}
+.view-id-front_page .catalog-chapter-teaser {
+  height: 200px;
+  margin: 0 -15px;
+}
+.view-id-front_page .catalog-chapter-teaser h2 {
+  color: white;
+  padding: .5em;
+  font-weight: 300;
+  text-shadow: 1px 1px 1px #000;
+}
