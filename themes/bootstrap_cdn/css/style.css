@@ -240,3 +240,18 @@ a:hover {
   text-shadow: 1px 1px 1px #000;
   margin: 0;
 }
+/************* Первая страница ****************/
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  min-width: 100%;
+}
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+.path-frontpage .navbar {
+  margin-bottom: 0;
+}
