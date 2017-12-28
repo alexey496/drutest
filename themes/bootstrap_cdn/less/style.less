@@ -1,5 +1,5 @@
 @brand-primary: #00b6de;
-@brand-primary-dark: darken(@brand-primary, 13.5%);
+@brand-primary-dark: darken(@brand-primary, 20%);
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -45,10 +45,10 @@ a:focus, a:hover {
 }
 .btn-primary {
   background-color: @brand-primary;
-  border-color: @brand-primary-dark;
+  border-color: @brand-primary;
   &:hover {
     background-color: darken(@brand-primary, 5%);
-    border-color: darken(@brand-primary-dark, 5%);
+    border-color: darken(@brand-primary, 5%);
   }
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
@@ -75,6 +75,32 @@ a:focus, a:hover {
 }
 .navbar-default .navbar-nav>li>a {
   font-weight: 400;
+}
+.navbar {
+  border-bottom: 2px solid @brand-primary;
+  .navbar-nav > li > a, .navbar-nav > .open > a, .dropdown-menu > li > a {
+    text-transform: uppercase;
+    color: @brand-primary;
+    &.is-active  {
+      &:hover, &:focus {
+        color: white;
+      }
+      background-color: @brand-primary;
+      color: white;
+    }
+    &:hover, &:focus {
+      background-color: @brand-primary;
+      color: @brand-primary-dark
+    }
+  }
+  .navbar-nav li.active > a {
+    &:hover, &:focus {
+      color: white;
+      background-color: @brand-primary;
+    }
+    background-color: @brand-primary;
+    color: white;
+  }
 }
 
 //** Форма поиска в navbar
@@ -250,18 +276,26 @@ a:focus, a:hover {
   }
 }
 
-/************* Первая страница ****************/
-//** Карусель слайдов
-.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  min-width: 100%;
-}
-
-//** Уберем отступы для .container-fluid
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.path-frontpage .navbar {
-  margin-bottom: 0;
+//**Первая страница
+.path-frontpage {
+  .carousel-inner > .item > a > img {
+    min-width: 100%;
+  }
+  .carousel-indicators {
+    bottom: 0;
+    margin-bottom: 0;
+    li {
+      border: 1px solid @brand-primary-dark;
+    }
+    .active {
+      background-color: @brand-primary-dark;
+    }
+  }
+  .container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
 }

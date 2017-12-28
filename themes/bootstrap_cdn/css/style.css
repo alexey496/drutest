@@ -46,15 +46,15 @@ a {
 }
 a:focus,
 a:hover {
-  color: #007e99;
+  color: #006278;
 }
 .btn-primary {
   background-color: #00b6de;
-  border-color: #007e99;
+  border-color: #00b6de;
 }
 .btn-primary:hover {
   background-color: #00a1c5;
-  border-color: #006980;
+  border-color: #00a1c5;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -91,6 +91,47 @@ a:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-weight: 400;
+}
+.navbar {
+  border-bottom: 2px solid #00b6de;
+}
+.navbar .navbar-nav > li > a,
+.navbar .navbar-nav > .open > a,
+.navbar .dropdown-menu > li > a {
+  text-transform: uppercase;
+  color: #00b6de;
+}
+.navbar .navbar-nav > li > a.is-active,
+.navbar .navbar-nav > .open > a.is-active,
+.navbar .dropdown-menu > li > a.is-active {
+  background-color: #00b6de;
+  color: white;
+}
+.navbar .navbar-nav > li > a.is-active:hover,
+.navbar .navbar-nav > .open > a.is-active:hover,
+.navbar .dropdown-menu > li > a.is-active:hover,
+.navbar .navbar-nav > li > a.is-active:focus,
+.navbar .navbar-nav > .open > a.is-active:focus,
+.navbar .dropdown-menu > li > a.is-active:focus {
+  color: white;
+}
+.navbar .navbar-nav > li > a:hover,
+.navbar .navbar-nav > .open > a:hover,
+.navbar .dropdown-menu > li > a:hover,
+.navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > .open > a:focus,
+.navbar .dropdown-menu > li > a:focus {
+  background-color: #00b6de;
+  color: #006278;
+}
+.navbar .navbar-nav li.active > a {
+  background-color: #00b6de;
+  color: white;
+}
+.navbar .navbar-nav li.active > a:hover,
+.navbar .navbar-nav li.active > a:focus {
+  color: white;
+  background-color: #00b6de;
 }
 .navbar #block-fulltext-search {
   float: right!important;
@@ -240,15 +281,20 @@ a:hover {
   text-shadow: 1px 1px 1px #000;
   margin: 0;
 }
-/************* Первая страница ****************/
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+.path-frontpage .carousel-inner > .item > a > img {
   min-width: 100%;
 }
-.container-fluid {
+.path-frontpage .carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+.path-frontpage .carousel-indicators li {
+  border: 1px solid #006278;
+}
+.path-frontpage .carousel-indicators .active {
+  background-color: #006278;
+}
+.path-frontpage .container-fluid {
   padding-right: 0;
   padding-left: 0;
 }
