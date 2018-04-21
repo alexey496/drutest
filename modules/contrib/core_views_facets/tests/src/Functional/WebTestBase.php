@@ -5,7 +5,7 @@ namespace Drupal\Tests\core_views_facets\Functional;
 use Drupal\Tests\BrowserTestBase;
 use Drupal\Tests\facets\Functional\BlockTestTrait;
 use Drupal\Tests\facets\Functional\TestHelperTrait;
-use Drupal\Core\Url;
+use Drupal\facets\Entity\Facet;
 
 /**
  * Provides the base class for web tests for Search API.
@@ -172,7 +172,7 @@ abstract class WebTestBase extends BrowserTestBase {
     $count = \Drupal::entityQuery('entity_test')
       ->count()
       ->execute() - $count;
-    $this->assertEqual($count, 5, "$count items inserted.");
+    $this->assertEquals($count, 5, "$count items inserted.");
   }
 
   /**
@@ -190,42 +190,56 @@ abstract class WebTestBase extends BrowserTestBase {
    *   Facet source.
    * @param string $source_type
    *   Either exposed or contextual.
+   * @param bool $allowBlockCreation
+   *   Automatically create a block.
    */
-  protected function createFacet($name, $id, $field = 'type', $display_id = 'page_1', $source = 'core_views_facets_basic_integration', $source_type = 'exposed') {
+  protected function createFacet($name, $id, $field = 'type', $display_id = 'page_1', $source = 'core_views_facets_basic_integration', $source_type = 'exposed', $allowBlockCreation = TRUE) {
     switch ($source_type) {
       case 'contextual':
         list($facet_source_id) = explode(':', $this->contextualFiltersFacetSourceId);
+        $source_id = str_replace(':', '__', $this->contextualFiltersFacetSourceId);
         break;
 
       case 'exposed':
       default:
         list($facet_source_id) = explode(':', $this->exposedFiltersFacetSourceId);
+        $source_id = str_replace(':', '__', $this->exposedFiltersFacetSourceId);
         break;
     }
+
+    // We didn't have a facet source config entity yet for this facet source
+    // plugin, so we create it on the fly.
+    $storage = \Drupal::entityTypeManager()->getStorage('facets_facet_source');
+    $storage->create([
+      'id' => $source_id,
+      'name' => str_replace('__', ':', $source_id),
+      'filter_key' => '',
+      'url_processor' => 'core_views_url_processor',
+    ])->save();
     $facet_source = "{$facet_source_id}:{$source}__{$display_id}";
 
-    $facet_source_edit_page = Url::fromRoute('entity.facets_facet_source.edit_form', [
-      'facets_facet_source' => $facet_source,
-    ]);
-    $this->drupalGet($facet_source_edit_page);
-    $this->assertResponse(200);
-
-    $url_processor_form_values = [
-      'url_processor' => 'core_views_url_processor',
-    ];
-    $this->drupalPostForm($facet_source_edit_page, $url_processor_form_values, 'Save');
-
-    $facet_add_page = Url::fromRoute('entity.facets_facet.add_form');
-    $this->drupalGet($facet_add_page);
-    $form_values = [
+    /** @var \Drupal\facets\FacetInterface $facet */
+    $facet = Facet::create([
       'id' => $id,
       'name' => $name,
-      'facet_source_id' => $facet_source,
-      "facet_source_configs[{$facet_source_id}:{$source}__{$display_id}][field_identifier]" => $field,
-    ];
-    $this->drupalPostForm(NULL, ['facet_source_id' => $facet_source], 'Configure facet source');
-    $this->drupalPostForm(NULL, $form_values, 'Save');
-    $this->blocks[$id] = $this->createBlock($id);
+      'weight' => 0,
+    ]);
+    $facet->setFacetSourceId($facet_source);
+    $facet->setFieldIdentifier($field);
+    $facet->setUrlAlias($id);
+    $facet->setWidget('links', ['show_numbers' => TRUE]);
+    $facet->addProcessor([
+      'processor_id' => 'url_processor_handler',
+      'weights' => ['pre_query' => -10, 'build' => -10],
+      'settings' => [],
+    ]);
+    $facet->setEmptyBehavior(['behavior' => 'none']);
+    $facet->setOnlyVisibleWhenFacetSourceIsVisible(TRUE);
+    $facet->save();
+
+    if ($allowBlockCreation) {
+      $this->blocks[$id] = $this->createBlock($id);
+    }
   }
 
 }

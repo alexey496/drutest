@@ -32,14 +32,13 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *       "operation" = "Drupal\commerce_payment\Form\PaymentOperationForm",
  *       "delete" = "Drupal\Core\Entity\ContentEntityDeleteForm",
  *     },
- *     "views_data" = "Drupal\views\EntityViewsData",
+ *     "views_data" = "Drupal\commerce\CommerceEntityViewsData",
  *     "route_provider" = {
  *       "default" = "Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider",
  *     },
  *   },
  *   base_table = "commerce_payment",
  *   admin_permission = "administer commerce_payment",
- *   fieldable = TRUE,
  *   entity_keys = {
  *     "id" = "payment_id",
  *     "bundle" = "type",
@@ -253,6 +252,13 @@ class Payment extends ContentEntityBase implements PaymentInterface {
   public function setExpiresTime($timestamp) {
     $this->set('expires', $timestamp);
     return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function isCompleted() {
+    return !$this->get('completed')->isEmpty();
   }
 
   /**

@@ -12,6 +12,8 @@ use Drupal\facets\QueryType\QueryTypePluginManager;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Core\Routing\RouteProviderInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityFieldManagerInterface;
+use Drupal\facets\Exception\Exception;
 
 /**
  * Represents a facet source of the core views with contextual filters.
@@ -51,11 +53,15 @@ class CoreViewsContextualFilter extends CoreViewsFacetSourceBase {
    *   The route match.
    * @param \Drupal\views\ViewExecutableFactory $executable_factory
    *   The view executable factory.
+   * @param \Drupal\Core\Entity\EntityFieldManagerInterface $entity_field_manager
+   *   The entity field manager.
    * @param \Drupal\core_views_facets\CoreViewsFacetsContextualFilterTypeManager $contextual_filter_type_plugin_manager
    *   The filter type plugin manager.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, QueryTypePluginManager $query_type_plugin_manager, EntityTypeManagerInterface $entity_type_manager, Request $request, RouteProviderInterface $route_provider, RouteMatchInterface $route_match, ViewExecutableFactory $executable_factory, CoreViewsFacetsContextualFilterTypeManager $contextual_filter_type_plugin_manager) {
-    parent::__construct($configuration, $plugin_id, $plugin_definition, $query_type_plugin_manager, $entity_type_manager, $request, $route_provider, $route_match, $executable_factory);
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, QueryTypePluginManager $query_type_plugin_manager, EntityTypeManagerInterface $entity_type_manager, Request $request, RouteProviderInterface $route_provider, RouteMatchInterface $route_match, ViewExecutableFactory $executable_factory, EntityFieldManagerInterface $entity_field_manager, CoreViewsFacetsContextualFilterTypeManager $contextual_filter_type_plugin_manager) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $query_type_plugin_manager, $entity_type_manager, $request, $route_provider, $route_match, $executable_factory, $entity_field_manager);
 
     $this->contextualFilterTypePluginManager = $contextual_filter_type_plugin_manager;
   }
@@ -74,6 +80,7 @@ class CoreViewsContextualFilter extends CoreViewsFacetSourceBase {
       $container->get('router.route_provider'),
       $container->get('current_route_match'),
       $container->get('views.executable'),
+      $container->get('entity_field.manager'),
       $container->get('plugin.manager.core_views_facets.contextual_filter_types')
     );
   }
@@ -252,6 +259,26 @@ class CoreViewsContextualFilter extends CoreViewsFacetSourceBase {
     }
 
     return $facet_core_views_filter_plugin;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDataDefinition($field_name) {
+    $this->view->build($this->pluginDefinition['view_display']);
+    $definition = $this->view->argument[$field_name]->definition;
+    $original_field_name = $this->getOriginalFieldName($definition);
+    $field_definition = $this->entityFieldManager->getFieldStorageDefinitions($definition['entity_type']);
+    if (isset($field_definition[$original_field_name])) {
+      $property_definitions = $field_definition[$original_field_name]->getPropertyDefinitions();
+      $field_type = $field_definition[$original_field_name]->getType();
+      foreach ($property_definitions as $property_definition) {
+        if ($field_type === $property_definition->getDataType()) {
+          return $property_definition;
+        }
+      }
+    }
+    throw new Exception("Field with name {$field_name} does not have a definition");
   }
 
 }

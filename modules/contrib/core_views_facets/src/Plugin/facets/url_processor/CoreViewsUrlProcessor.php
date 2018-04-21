@@ -7,9 +7,9 @@ use Drupal\facets\UrlProcessor\UrlProcessorPluginBase;
 use Drupal\core_views_facets\Plugin\facets\facet_source\CoreViewsExposedFilter;
 use Drupal\core_views_facets\Plugin\facets\facet_source\CoreViewsContextualFilter;
 use Drupal\views\ViewExecutableFactory;
-use Drupal\Core\Entity\EntityStorageInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 
 /**
  * A url processor for views exposed filters.
@@ -58,18 +58,19 @@ class CoreViewsUrlProcessor extends UrlProcessorPluginBase {
    *   The plugin implementation definition.
    * @param \Symfony\Component\HttpFoundation\Request $request
    *   A request object for the current request.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   *   The Entity Type Manager.
    * @param \Drupal\views\ViewExecutableFactory $executable_factory
    *   The view executable factory.
-   * @param \Drupal\Core\Entity\EntityStorageInterface $storage
-   *   The views storage.
    *
    * @throws \Drupal\facets\Exception\InvalidProcessorException
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, Request $request, ViewExecutableFactory $executable_factory, EntityStorageInterface $storage) {
-    parent::__construct($configuration, $plugin_id, $plugin_definition, $request);
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, Request $request, EntityTypeManagerInterface $entity_type_manager, ViewExecutableFactory $executable_factory) {
+    parent::__construct($configuration, $plugin_id, $plugin_definition, $request, $entity_type_manager);
 
     $this->executableFactory = $executable_factory;
-    $this->storage = $storage;
+    $this->storage = $entity_type_manager->getStorage('view');
   }
 
   /**
@@ -81,23 +82,10 @@ class CoreViewsUrlProcessor extends UrlProcessorPluginBase {
       $plugin_id,
       $plugin_definition,
       $container->get('request_stack')->getMasterRequest(),
-      $container->get('views.executable'),
-      $container->get('entity_type.manager')->getStorage('view')
+      $container->get('entity_type.manager'),
+      $container->get('views.executable')
     );
   }
-
-  /**
-   * A string that separates the filters in the query string.
-   */
-  const SEPARATOR = ':';
-
-  /**
-   * An array of active filters.
-   *
-   * @var string[]
-   *   An array containing the active filters.
-   */
-  protected $activeFilters = [];
 
   /**
    * {@inheritdoc}
@@ -133,7 +121,7 @@ class CoreViewsUrlProcessor extends UrlProcessorPluginBase {
           foreach ($results as &$result) {
             $result_get_params = clone $get_params;
 
-            $active_values = $result_get_params->get($views_filter_parameter, $views_filter['expose']['multiple'] ? [] : '', TRUE);
+            $active_values = $result_get_params->get($views_filter_parameter, $views_filter['expose']['multiple'] ? [] : '');
 
             // If the value is active, remove the filter string from parameters.
             if ($result->isActive()) {
@@ -235,12 +223,12 @@ class CoreViewsUrlProcessor extends UrlProcessorPluginBase {
 
         if ($this->request->query->has($views_filter_parameter)) {
           if ($views_filter['expose']['multiple']) {
-            foreach ($this->request->query->get($views_filter_parameter, [], TRUE) as $value) {
+            foreach ($this->request->query->get($views_filter_parameter, []) as $value) {
               $facet->setActiveItem(trim($value, '"'));
             }
           }
           else {
-            $value = $this->request->query->get($views_filter_parameter, NULL, TRUE);
+            $value = $this->request->query->get($views_filter_parameter, NULL);
             if (isset($value) && $value !== '') {
               $facet->setActiveItem($value);
             }

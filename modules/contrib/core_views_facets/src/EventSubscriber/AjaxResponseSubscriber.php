@@ -48,6 +48,8 @@ class AjaxResponseSubscriber implements EventSubscriberInterface {
    *
    * @param \Symfony\Component\HttpKernel\Event\FilterResponseEvent $event
    *   The response event, which contains the possible AjaxResponse object.
+   *
+   * @throws \Drupal\facets\Exception\InvalidProcessorException
    */
   public function onResponse(FilterResponseEvent $event) {
     $response = $event->getResponse();

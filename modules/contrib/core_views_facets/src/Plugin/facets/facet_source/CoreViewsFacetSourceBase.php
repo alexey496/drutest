@@ -13,6 +13,8 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Drupal\Core\Routing\RouteProviderInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityFieldManagerInterface;
+use Drupal\facets\Exception\Exception;
 
 /**
  * Provide common functions for core Views based facet sources.
@@ -62,6 +64,13 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
   protected $routeMatch;
 
   /**
+   * The entity field manager.
+   *
+   * @var \Drupal\Core\Entity\EntityFieldManagerInterface
+   */
+  protected $entityFieldManager;
+
+  /**
    * Constructs a CoreViewsContextualFilter object.
    *
    * @param array $configuration
@@ -82,13 +91,14 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
    *   The route match.
    * @param \Drupal\views\ViewExecutableFactory $executable_factory
    *   The view executable factory.
+   * @param \Drupal\Core\Entity\EntityFieldManagerInterface $entity_field_manager
+   *   The entity field manager.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, QueryTypePluginManager $query_type_plugin_manager, EntityTypeManagerInterface $entity_type_manager, Request $request, RouteProviderInterface $route_provider, RouteMatchInterface $route_match, ViewExecutableFactory $executable_factory) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, QueryTypePluginManager $query_type_plugin_manager, EntityTypeManagerInterface $entity_type_manager, Request $request, RouteProviderInterface $route_provider, RouteMatchInterface $route_match, ViewExecutableFactory $executable_factory, EntityFieldManagerInterface $entity_field_manager) {
     parent::__construct($configuration, $plugin_id, $plugin_definition, $query_type_plugin_manager);
 
-    $this->pluginDefinition = $plugin_definition;
-    $this->pluginId = $plugin_id;
-    $this->configuration = $configuration;
     $this->entityTypeManager = $entity_type_manager;
     $this->request = $request;
     $this->routeProvider = $route_provider;
@@ -99,6 +109,7 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
       ->load($plugin_definition['view_id']);
     $this->view = $executable_factory->get($view);
     $this->view->setDisplay($plugin_definition['view_display']);
+    $this->entityFieldManager = $entity_field_manager;
   }
 
   /**
@@ -114,7 +125,8 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
       $container->get('request_stack')->getMasterRequest(),
       $container->get('router.route_provider'),
       $container->get('current_route_match'),
-      $container->get('views.executable')
+      $container->get('views.executable'),
+      $container->get('entity_field.manager')
     );
   }
 
@@ -326,20 +338,16 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
    *   The drupalSettings array.
    */
   public function getAjaxSettingsByFacet(FacetInterface $facet) {
-    /** @var \Drupal\core_views_facets\Plugin\facets\facet_source\CoreViewsFacetSourceBase $facet_source */
-    $facet_source = $facet->getFacetSource();
+    $this->view->build($this->pluginDefinition['view_display']);
 
-    /** @var \Drupal\views\ViewExecutable $view */
-    $view = $facet_source->getView();
-
-    $filter_handler = $view->getHandler($view->current_display, 'filter', $facet->getFieldIdentifier());
+    $filter_handler = $this->view->getHandler($this->view->current_display, 'filter', $facet->getFieldIdentifier());
 
     return [
-      'view_id' => $view->id(),
-      'current_display_id' => $view->current_display,
+      'view_id' => $this->view->id(),
+      'current_display_id' => $this->view->current_display,
       'field_id' => $filter_handler['expose']['identifier'],
-      'type' => $facet_source->getBaseId(),
-      'view_base_path' => ltrim($view->getPath(), '/'),
+      'type' => $this->getBaseId(),
+      'view_base_path' => ltrim($this->view->getPath(), '/'),
     ];
   }
 
@@ -347,12 +355,45 @@ abstract class CoreViewsFacetSourceBase extends FacetSourcePluginBase {
    * {@inheritdoc}
    */
   public function calculateDependencies() {
-    $plugin_id_array = explode(':', $this->pluginId);
-    list($view_id,) = explode('__', $plugin_id_array[1]);
-    $dependencies['config'] = ['views.view.' . $view_id];
+    $dependencies['config'] = ['views.view.' . $this->view->id()];
     $dependencies['module'] = ['core_views_facets', 'views'];
 
     return $dependencies;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getDataDefinition($field_name) {
+    throw new Exception("Field with name {$field_name} does not have a definition");
+  }
+
+  /**
+   * Get original field name.
+   *
+   * @param array $definition
+   *   Views handler defintion.
+   *
+   * @return string
+   *   Original field name.
+   *
+   * @todo Find a better solution.
+   */
+  public function getOriginalFieldName(array $definition) {
+    if (isset($definition['entity field'])) {
+      return $definition['entity field'];
+    }
+    if (isset($definition['real_field'])) {
+      return $definition['real_field'];
+    }
+    if (isset($definition['field_name'])) {
+      return $definition['field_name'];
+    }
+    if (isset($definition['field'])) {
+      return $definition['field'];
+    }
+
+    return '';
   }
 
 }

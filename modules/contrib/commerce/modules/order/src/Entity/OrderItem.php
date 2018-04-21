@@ -35,7 +35,6 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   },
  *   base_table = "commerce_order_item",
  *   admin_permission = "administer commerce_order",
- *   fieldable = TRUE,
  *   entity_keys = {
  *     "id" = "order_item_id",
  *     "uuid" = "uuid",
@@ -359,7 +358,8 @@ class OrderItem extends CommerceContentEntityBase implements OrderItemInterface 
         'type' => 'timestamp',
         'weight' => 0,
       ])
-      ->setDisplayConfigurable('form', TRUE);
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['changed'] = BaseFieldDefinition::create('changed')
       ->setLabel(t('Changed'))
@@ -387,7 +387,7 @@ class OrderItem extends CommerceContentEntityBase implements OrderItemInterface 
       // hidden instead. https://www.drupal.org/node/2346347#comment-10254087.
       $fields['purchased_entity']->setRequired(FALSE);
       $fields['purchased_entity']->setDisplayOptions('form', [
-        'type' => 'hidden',
+        'region' => 'hidden',
       ]);
       $fields['purchased_entity']->setDisplayConfigurable('form', FALSE);
       $fields['purchased_entity']->setDisplayConfigurable('view', FALSE);

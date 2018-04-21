@@ -13,6 +13,7 @@
 
 /**
  * @property {CoreViewFacetsSettings[]} drupalSettings.core_views_facets
+ * @property {string} drupalSettings.views.ajax_path
  */
 
 
@@ -51,6 +52,9 @@
 
           var core_views_ajax_settings = Drupal.views.instances['views_dom_id:' + current_dom_id].element_settings;
           core_views_ajax_settings.submit = core_views_settings;
+
+          // Ensure removing any get parameters which would override "our" parameters.
+          core_views_ajax_settings.url = settings.views.ajax_path;
 
           Drupal.ajax(core_views_ajax_settings).execute();
         });

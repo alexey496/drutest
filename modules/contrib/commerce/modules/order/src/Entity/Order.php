@@ -32,7 +32,7 @@ use Drupal\profile\Entity\ProfileInterface;
  *     "access" = "Drupal\commerce_order\OrderAccessControlHandler",
  *     "permission_provider" = "Drupal\commerce_order\OrderPermissionProvider",
  *     "list_builder" = "Drupal\commerce_order\OrderListBuilder",
- *     "views_data" = "Drupal\views\EntityViewsData",
+ *     "views_data" = "Drupal\commerce\CommerceEntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\commerce_order\Form\OrderForm",
  *       "add" = "Drupal\commerce_order\Form\OrderForm",
@@ -48,7 +48,6 @@ use Drupal\profile\Entity\ProfileInterface;
  *   base_table = "commerce_order",
  *   admin_permission = "administer commerce_order",
  *   permission_granularity = "bundle",
- *   fieldable = TRUE,
  *   entity_keys = {
  *     "id" = "order_id",
  *     "label" = "order_number",
@@ -325,16 +324,7 @@ class Order extends CommerceContentEntityBase implements OrderInterface {
       foreach ($order_item->getAdjustments() as $adjustment) {
         // Order item adjustments apply to the unit price, they
         // must be multiplied by quantity before they are used.
-        $multiplied_adjustment = new Adjustment([
-          'type' => $adjustment->getType(),
-          'label' => $adjustment->getLabel(),
-          'amount' => $adjustment->getAmount()->multiply($order_item->getQuantity()),
-          'percentage' => $adjustment->getPercentage(),
-          'source_id' => $adjustment->getSourceId(),
-          'included' => $adjustment->isIncluded(),
-          'locked' => $adjustment->isLocked(),
-        ]);
-        $adjustments[] = $multiplied_adjustment;
+        $adjustments[] = $adjustment->multiply($order_item->getQuantity());
       }
     }
     foreach ($this->getAdjustments() as $adjustment) {
@@ -352,8 +342,9 @@ class Order extends CommerceContentEntityBase implements OrderInterface {
     $subtotal_price = NULL;
     if ($this->hasItems()) {
       foreach ($this->getItems() as $order_item) {
-        $order_item_total = $order_item->getTotalPrice();
-        $subtotal_price = $subtotal_price ? $subtotal_price->add($order_item_total) : $order_item_total;
+        if ($order_item_total = $order_item->getTotalPrice()) {
+          $subtotal_price = $subtotal_price ? $subtotal_price->add($order_item_total) : $order_item_total;
+        }
       }
     }
     return $subtotal_price;
@@ -367,12 +358,20 @@ class Order extends CommerceContentEntityBase implements OrderInterface {
     $total_price = NULL;
     if ($this->hasItems()) {
       foreach ($this->getItems() as $order_item) {
-        $order_item_total = $order_item->getTotalPrice();
-        $total_price = $total_price ? $total_price->add($order_item_total) : $order_item_total;
+        if ($order_item_total = $order_item->getTotalPrice()) {
+          $total_price = $total_price ? $total_price->add($order_item_total) : $order_item_total;
+        }
       }
-      foreach ($this->collectAdjustments() as $adjustment) {
-        if (!$adjustment->isIncluded()) {
-          $total_price = $total_price->add($adjustment->getAmount());
+      $adjustments = $this->collectAdjustments();
+      if ($adjustments) {
+        /** @var \Drupal\commerce_order\AdjustmentTransformerInterface $adjustment_transformer */
+        $adjustment_transformer = \Drupal::service('commerce_order.adjustment_transformer');
+        $adjustments = $adjustment_transformer->combineAdjustments($adjustments);
+        $adjustments = $adjustment_transformer->roundAdjustments($adjustments);
+        foreach ($adjustments as $adjustment) {
+          if (!$adjustment->isIncluded()) {
+            $total_price = $total_price->add($adjustment->getAmount());
+          }
         }
       }
     }
@@ -627,7 +626,7 @@ class Order extends CommerceContentEntityBase implements OrderInterface {
         'weight' => 0,
       ])
       ->setDisplayOptions('form', [
-        'type' => 'hidden',
+        'region' => 'hidden',
         'weight' => 0,
       ])
       ->setDisplayConfigurable('form', TRUE)

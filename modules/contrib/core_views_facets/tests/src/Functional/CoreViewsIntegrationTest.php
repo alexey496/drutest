@@ -46,6 +46,69 @@ class CoreViewsIntegrationTest extends WebTestBase {
   }
 
   /**
+   * Tests that an url alias works correctly.
+   */
+  public function testExposedFilterUrlAlias() {
+    $facet_name = "Test Facet URL";
+    $facet_id = 'test_facet_url';
+
+    // Make sure we're logged in with a user that has sufficient permissions.
+    $this->drupalLogin($this->adminUser);
+
+    $this->createFacet($facet_name, $facet_id);
+
+    $this->drupalGet($this->facetUrl);
+    $this->assertSession()->statusCodeEquals(200);
+    $this->assertFacetLabel('item');
+    $this->assertFacetLabel('article');
+
+    $this->clickLink('item');
+    $url = Url::fromUserInput('/' . $this->facetUrl . '/all/all', ['query' => ['type' => 'item']]);
+    $this->assertSession()->addressEquals($url);
+  }
+
+  /**
+   * Tests that an url alias works correctly.
+   */
+  public function testContextualFilterUrlAlias() {
+    $facet_name = "Test Facet URL";
+    $facet_id = 'test_facet_url';
+
+    // Make sure we're logged in with a user that has sufficient permissions.
+    $this->drupalLogin($this->adminUser);
+
+    $this->createFacet($facet_name, $facet_id, 'type', 'page_1', 'core_views_facets_basic_integration', 'contextual');
+
+    $this->drupalGet($this->facetUrl);
+    $this->assertSession()->statusCodeEquals(200);
+    $this->assertFacetLabel('item');
+    $this->assertFacetLabel('article');
+
+    $this->clickLink('item');
+    $url = Url::fromUserInput('/' . $this->facetUrl . '/all/item');
+    $this->assertSession()->addressEquals($url);
+  }
+
+  /**
+   * Test that a missing facet source field selection prevents facet creation.
+   */
+  public function testFacetFormValidate() {
+    $id = 'southern_white_facet_owl';
+    $name = 'Southern white-faced owl';
+    $facet_add_page = Url::fromRoute('entity.facets_facet.add_form');
+    $this->drupalGet($facet_add_page);
+    $this->assertSession()->statusCodeEquals(200);
+
+    $edit = [
+      'name' => $name,
+      'id' => $id,
+      'facet_source_id' => $this->exposedFiltersFacetSourceId,
+    ];
+    $this->drupalPostForm(NULL, $edit, 'Save');
+    $this->assertSession()->responseContains('Please select a valid field.');
+  }
+
+  /**
    * Tests various operations via the Facets' admin UI.
    */
   public function testFramework() {
@@ -61,24 +124,24 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // By default, the view should show all entities.
     $this->drupalGet($this->facetUrl);
-    $this->assertText('Displaying 5 search results', 'The search view displays the correct number of results.');
+    $this->assertSession()->pageTextContains('Displaying 5 search results');
 
     // Create and place a block for "Test Facet name" facet.
     $this->blocks[$facet_id] = $this->createBlock($facet_id);
 
     // Verify that the facet results are correct.
     $this->drupalGet($this->facetUrl);
-    $this->assertText('item');
-    $this->assertText('article');
+    $this->assertSession()->pageTextContains('item');
+    $this->assertSession()->pageTextContains('article');
 
     // Verify that facet blocks appear as expected.
     $this->assertFacetBlocksAppear();
 
-    // Verify that the facet only shows when the facet source is visible.
+    // Verify that the facet only shows when the facet source is visible, it
+    // should not show up on the user page.
     $this->setOptionShowOnlyWhenFacetSourceVisible($facet_name);
-    $this->goToDeleteFacetPage($facet_name);
-    $this->assertNoText('item');
-    $this->assertNoText('article');
+    $this->drupalGet('user/2');
+    $this->assertNoFacetBlocksAppear();
 
     $content_ids = \Drupal::entityQuery('entity_test')->execute();
     $storage = \Drupal::entityTypeManager()->getStorage('entity_test');
@@ -95,71 +158,8 @@ class CoreViewsIntegrationTest extends WebTestBase {
     // Verify that the "empty_text" appears as expected.
     $this->setEmptyBehaviorFacetText($facet_name);
     $this->drupalGet($this->facetUrl);
-    $this->assertRaw('block-test-facet-name');
-    $this->assertRaw('No results found for this block!');
-  }
-
-  /**
-   * Tests that an url alias works correctly.
-   */
-  public function testExposedFilterUrlAlias() {
-    $facet_name = "Test Facet URL";
-    $facet_id = 'test_facet_url';
-
-    // Make sure we're logged in with a user that has sufficient permissions.
-    $this->drupalLogin($this->adminUser);
-
-    $this->createFacet($facet_name, $facet_id);
-
-    $this->drupalGet($this->facetUrl);
-    $this->assertResponse(200);
-    $this->assertFacetLabel('item');
-    $this->assertFacetLabel('article');
-
-    $this->clickLink('item');
-    $url = Url::fromUserInput('/' . $this->facetUrl . '/all/all', ['query' => ['type' => 'item']]);
-    $this->assertUrl($url);
-  }
-
-  /**
-   * Tests that an url alias works correctly.
-   */
-  public function testContextualFilterUrlAlias() {
-    $facet_name = "Test Facet URL";
-    $facet_id = 'test_facet_url';
-
-    // Make sure we're logged in with a user that has sufficient permissions.
-    $this->drupalLogin($this->adminUser);
-
-    $this->createFacet($facet_name, $facet_id, 'type', 'page_1', 'core_views_facets_basic_integration', 'contextual');
-
-    $this->drupalGet($this->facetUrl);
-    $this->assertResponse(200);
-    $this->assertFacetLabel('item');
-    $this->assertFacetLabel('article');
-
-    $this->clickLink('item');
-    $url = Url::fromUserInput('/' . $this->facetUrl . '/all/item');
-    $this->assertUrl($url);
-  }
-
-  /**
-   * Test that a missing facet source field selection prevents facet creation.
-   */
-  public function testFacetFormValidate() {
-    $id = 'southern_white_facet_owl';
-    $name = 'Southern white-faced owl';
-    $facet_add_page = Url::fromRoute('entity.facets_facet.add_form');
-    $this->drupalGet($facet_add_page);
-    $this->assertResponse(200);
-
-    $edit = [
-      'name' => $name,
-      'id' => $id,
-      'facet_source_id' => $this->exposedFiltersFacetSourceId,
-    ];
-    $this->drupalPostForm(NULL, $edit, 'Save');
-    $this->assertSession()->responseContains('Please select a valid field.');
+    $this->assertSession()->responseContains('block-test-facet-name');
+    $this->assertSession()->responseContains('No results found for this block!');
   }
 
   /**
@@ -177,7 +177,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // Go to the facet edit page and make sure "edit facet %facet" is present.
     $this->drupalGet($facet_display_page);
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
 
     // Configure the text for empty results behavior.
     $edit = [
@@ -201,7 +201,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
       'facets_facet' => $facet_id,
     ]);
     $this->drupalGet($facet_edit_page);
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
 
     $edit = [
       'facet_settings[only_visible_when_facet_source_is_visible]' => TRUE,
@@ -215,12 +215,12 @@ class CoreViewsIntegrationTest extends WebTestBase {
    * Get the facet overview page and make sure the overview is empty.
    */
   protected function checkEmptyOverview() {
-    $this->drupalGet(Url::fromRoute('facets.overview'));
-    $this->assertResponse(200);
+    $this->drupalGet(Url::fromRoute('entity.facets_facet.collection'));
+    $this->assertSession()->statusCodeEquals(200);
 
     // The list overview has Field: field_name as description. This tests on the
     // absence of that.
-    $this->assertNoText('Field:');
+    $this->assertSession()->pageTextNotContains('Field:');
   }
 
   /**
@@ -253,7 +253,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
       'facets_facet_source' => $facet_source_id,
     ]);
     $this->drupalGet($facet_source_edit_page);
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
 
     $url_processor_form_values = [
       'url_processor' => 'core_views_url_processor',
@@ -263,7 +263,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
     // Go to the Add facet page and make sure that returns a 200.
     $facet_add_page = Url::fromRoute('entity.facets_facet.add_form');
     $this->drupalGet($facet_add_page);
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
 
     $form_values = [
       'name' => '',
@@ -273,13 +273,13 @@ class CoreViewsIntegrationTest extends WebTestBase {
     // Try filling out the form, but without having filled in a name for the
     // facet to test for form errors.
     $this->drupalPostForm($facet_add_page, $form_values, 'Save');
-    $this->assertText('Name field is required.');
-    $this->assertText('Facet source field is required.');
+    $this->assertSession()->pageTextContains('Name field is required.');
+    $this->assertSession()->pageTextContains('Facet source field is required.');
 
     // Make sure that when filling out the name, the form error disappears.
     $form_values['name'] = $facet_name;
     $this->drupalPostForm(NULL, $form_values, 'Save');
-    $this->assertNoText('Name field is required.');
+    $this->assertSession()->pageTextNotContains('Name field is required.');
 
     // Configure the facet source by selecting the test view.
     $this->drupalGet($facet_add_page);
@@ -287,7 +287,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // The field is still required.
     $this->drupalPostForm(NULL, $form_values, 'Save');
-    $this->assertText('Facet field field is required.');
+    $this->assertSession()->pageTextContains('Facet field field is required.');
 
     // Fill in all fields and make sure the 'field is required' message is no
     // longer shown.
@@ -296,16 +296,16 @@ class CoreViewsIntegrationTest extends WebTestBase {
       'facet_source_configs[' . $facet_source_id . '][field_identifier]' => $facet_type,
     ];
     $this->drupalPostForm(NULL, $form_values + $facet_source_form, 'Save');
-    $this->assertNoText('field is required.');
+    $this->assertSession()->pageTextNotContains('field is required.');
 
     // Make sure that the redirection to the display page is correct.
-    $this->assertText('Facet ' . $facet_name . ' has been created.');
+    $this->assertSession()->pageTextContains('Facet ' . $facet_name . ' has been created.');
     $url = Url::fromRoute('entity.facets_facet.edit_form', [
       'facets_facet' => $facet_id,
     ]);
-    $this->assertUrl($url);
+    $this->assertSession()->addressEquals($url);
 
-    $this->drupalGet(Url::fromRoute('facets.overview'));
+    $this->drupalGet(Url::fromRoute('entity.facets_facet.collection'));
   }
 
   /**
@@ -323,12 +323,12 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // Go to the facet edit page and make sure "edit facet %facet" is present.
     $this->drupalGet($facet_edit_page);
-    $this->assertResponse(200);
-    $this->assertRaw('Facet settings for ' . $facet_name . ' facet');
+    $this->assertSession()->statusCodeEquals(200);
+    $this->assertSession()->responseContains('Facet settings for ' . $facet_name . ' facet');
 
     // Check if it's possible to change the machine name.
     $elements = $this->xpath('//form[@id="facets-facet-settings-form"]/div[contains(@class, "form-item-id")]/input[@disabled]');
-    $this->assertEqual(count($elements), 1, 'Machine name cannot be changed.');
+    $this->assertEquals(count($elements), 1, 'Machine name cannot be changed.');
 
     // Change the facet name to add in "-2" to test editing of a facet works.
     $form_values = ['name' => $facet_name . ' - 2'];
@@ -336,11 +336,11 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // Make sure that the redirection back to the overview was successful and
     // the edited facet is shown on the overview page.
-    $this->assertText('Facet ' . $facet_name . ' - 2 has been updated.');
+    $this->assertSession()->pageTextContains('Facet ' . $facet_name . ' - 2 has been updated.');
 
     // Make sure the "-2" suffix is still on the facet when editing a facet.
     $this->drupalGet($facet_edit_page);
-    $this->assertRaw('Facet settings for ' . $facet_name . ' - 2 facet');
+    $this->assertSession()->responseContains('Facet settings for ' . $facet_name . ' - 2 facet');
 
     // Edit the form and change the facet's name back to the initial name.
     $form_values = ['name' => $facet_name];
@@ -348,7 +348,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // Make sure that the redirection back to the overview was successful and
     // the edited facet is shown on the overview page.
-    $this->assertText('Facet ' . $facet_name . ' has been updated.');
+    $this->assertSession()->pageTextContains('Facet ' . $facet_name . ' has been updated.');
   }
 
   /**
@@ -379,7 +379,7 @@ class CoreViewsIntegrationTest extends WebTestBase {
 
     // Go to the facet delete page and make the warning is shown.
     $this->drupalGet($facet_delete_page);
-    $this->assertResponse(200);
+    $this->assertSession()->statusCodeEquals(200);
   }
 
 }

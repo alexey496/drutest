@@ -36,12 +36,14 @@ class CoreViewsExposedFilterDeriver extends FacetSourceDeriverBase {
    *   The entity type manager.
    * @param \Drupal\Core\StringTranslation\TranslationInterface $string_translation
    *   The string translation service.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
    */
   public function __construct($base_plugin_id, EntityTypeManagerInterface $entity_type_manager, TranslationInterface $string_translation) {
     $this->basePluginId = $base_plugin_id;
-    $this->entityTypeManager = $entity_type_manager;
+    $this->setEntityTypeManager($entity_type_manager);
     $this->viewStorage = $this->entityTypeManager->getStorage('view');
-    $this->stringTranslation = $string_translation;
+    $this->setStringTranslation($string_translation);
   }
 
   /**

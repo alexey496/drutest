@@ -10,10 +10,10 @@ dependencies:
   - datetime
   - inline_entity_form
   - views
-  - system (>=8.4.0)
+  - system (>=8.5.0)
 
-# Information added by Drupal.org packaging script on 2017-12-06
-version: '8.x-2.2'
+# Information added by Drupal.org packaging script on 2018-04-06
+version: '8.x-2.6'
 core: '8.x'
 project: 'commerce'
-datestamp: 1512585809
+datestamp: 1523023396

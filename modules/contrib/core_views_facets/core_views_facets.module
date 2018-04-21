@@ -111,6 +111,7 @@ function core_views_facets_entity_presave(EntityInterface $entity) {
  * Implements hook_entity_type_alter().
  */
 function core_views_facets_entity_type_alter(array &$entity_types) {
-  /** @var $entity_types \Drupal\Core\Entity\EntityTypeInterface[] */
+
+  /** @var \Drupal\Core\Entity\EntityTypeInterface[] $entity_types */
   $entity_types['facets_facet']->setFormClass('edit', 'Drupal\core_views_facets\Form\ViewsFacetForm');
 }

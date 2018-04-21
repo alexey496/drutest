@@ -32,7 +32,7 @@ use Drupal\user\UserInterface;
  *     "storage" = "Drupal\commerce_product\ProductVariationStorage",
  *     "access" = "Drupal\commerce\EmbeddedEntityAccessControlHandler",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
- *     "views_data" = "Drupal\views\EntityViewsData",
+ *     "views_data" = "Drupal\commerce\CommerceEntityViewsData",
  *     "form" = {
  *       "default" = "Drupal\Core\Entity\ContentEntityForm",
  *     },
@@ -40,7 +40,6 @@ use Drupal\user\UserInterface;
  *     "translation" = "Drupal\content_translation\ContentTranslationHandler"
  *   },
  *   admin_permission = "administer commerce_product",
- *   fieldable = TRUE,
  *   translatable = TRUE,
  *   content_translation_ui_skip = TRUE,
  *   base_table = "commerce_product_variation",

@@ -66,14 +66,14 @@ abstract class CoreViewsFacetsFilterType extends ProcessorPluginBase implements 
    * Alters the facet query before execution.
    *
    * @param \Drupal\views\ViewExecutable $view
-   *    The views executable the facet applies to.
+   *   The views executable the facet applies to.
    * @param \Drupal\views\Plugin\views\HandlerBase $handler
-   *    The loaded views contextual filter handler.
+   *   The loaded views contextual filter handler.
    * @param \Drupal\facets\FacetInterface $facet
-   *    The facet being executed.
+   *   The facet being executed.
    *
    * @return null|\Drupal\Core\Database\Query\Select
-   *    The altered query object to be executed.
+   *   The altered query object to be executed.
    */
   public function prepareQuery(ViewExecutable &$view, HandlerBase $handler, FacetInterface $facet) {
     $filter_table_alias = [];
@@ -152,14 +152,14 @@ abstract class CoreViewsFacetsFilterType extends ProcessorPluginBase implements 
    * Alters the result row before displaying the content.
    *
    * @param \stdClass $row
-   *    The row as returned by fetchObject().
+   *   The row as returned by fetchObject().
    * @param \Drupal\views\Plugin\views\HandlerBase $handler
-   *    The loaded views contextual filter handler.
+   *   The loaded views contextual filter handler.
    * @param \Drupal\facets\FacetInterface $facet
-   *    The facet being executed.
+   *   The facet being executed.
    *
    * @return \Drupal\facets\Result\Result
-   *    A valid facet result entity.
+   *   A valid facet result entity.
    */
   public function processDatabaseRow(\stdClass $row, HandlerBase $handler, FacetInterface $facet) {
     $value = $row->facetrawvalue;
@@ -171,7 +171,7 @@ abstract class CoreViewsFacetsFilterType extends ProcessorPluginBase implements 
       $label = $value;
     }
 
-    return new Result($value, $label, $count);
+    return new Result($facet, $value, $label, $count);
   }
 
 }
