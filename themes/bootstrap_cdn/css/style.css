@@ -205,7 +205,7 @@ a:hover {
   top: 0;
   padding: 0 1em 1em;
   background-color: rgba(255, 255, 255, 0.8);
-  z-index: 1000;
+  z-index: 999;
 }
 .commerce-product--full h4 {
   border-bottom: 1px dotted;
