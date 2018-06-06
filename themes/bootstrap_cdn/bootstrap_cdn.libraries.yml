@@ -3,4 +3,4 @@ global-styling:
     theme:
       css/style.css: {}
       # добавим Google шрифт
-      'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500': { external: true }
+      'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500&amp;subset=cyrillic': { external: true }
