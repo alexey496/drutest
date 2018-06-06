@@ -210,6 +210,9 @@ a:hover {
 .commerce-product--full h4 {
   border-bottom: 1px dotted;
 }
+.commerce-product--full .margin-btm {
+  margin-bottom: 4em;
+}
 .carousel-control:hover {
   color: #00b6de;
 }

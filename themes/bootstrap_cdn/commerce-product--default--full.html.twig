@@ -30,7 +30,7 @@
         {% endif %}
     </div>
     <div>{{ product.variation_field_product_variation_img }}</div>
-    <div class="row">
+    <div class="row margin-btm">
         <div class="col-sm-5">
             <h4 class="description_title">Описание</h4>
             {{ product.body }}
@@ -52,7 +52,7 @@
     </div>
     {# Если поле "Файлы" или "YouTube" заполнено - отрендерим его #}
     {% if (product.field_download|render) or (product.field_youtube|render) %}
-        <div class="row">
+        <div class="row margin-btm">
             {% if (product.field_youtube|render) %}
             <div class="col-sm-5">
                 {{ product.field_youtube }}
