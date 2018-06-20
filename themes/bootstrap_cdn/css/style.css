@@ -74,8 +74,8 @@ a:hover {
   color: #00b6de;
 }
 .region-navigation a.logo {
-  margin-top: 7px;
-  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .dropdown-menu > li > a {
   padding: 8px 20px;
@@ -133,6 +133,9 @@ a:hover {
   color: white;
   background-color: #00b6de;
 }
+.navbar .navbar-nav > li > a {
+  line-height: 50px;
+}
 .navbar #block-fulltext-search {
   float: right!important;
 }
@@ -145,6 +148,10 @@ a:hover {
 .navbar #block-fulltext-search #views-exposed-form-fulltext-search-page-1 input#edit-fulltext {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+.navbar-form {
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 .field--name-field-hex {
   border: 1px solid #666;
@@ -304,4 +311,26 @@ a:hover {
 }
 .path-frontpage .navbar {
   margin-bottom: 0;
+}
+section.wide-banner {
+  background-color: #a6a6a6;
+  color: white;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+section.wide-banner .avc-title {
+  font-size: 2.5em;
+  line-height: 1.1em;
+}
+section.wide-banner .avc-city {
+  text-decoration: underline;
+}
+section.wide-banner .avc-desc {
+  font-weight: 300;
+}
+section.wide-banner a {
+  color: #006278;
 }

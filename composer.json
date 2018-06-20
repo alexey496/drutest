@@ -27,7 +27,8 @@
         "drupal/migrate_tools": "^4",
         "drupal/youtube": "^1.0@beta",
         "drupal/views_bootstrap": "^3.0",
-        "drush/drush": "^9.2"
+        "drush/drush": "^9.2",
+        "drupal/migrate_spreadsheet": "^1.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

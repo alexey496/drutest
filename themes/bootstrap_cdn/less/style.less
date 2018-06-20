@@ -5,7 +5,7 @@
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 75%); // #777
+@gray-light:             lighten(@gray-base, 65%); // #a6a6a6
 @gray-lighter:           lighten(@gray-base, 90%); // #eee
 
 
@@ -61,8 +61,8 @@ a:focus, a:hover {
 
 //** Шапка
 .region-navigation a.logo {
-  margin-top: 7px;
-  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .dropdown-menu>li>a {
   padding: 8px 20px;
@@ -101,6 +101,9 @@ a:focus, a:hover {
     background-color: @brand-primary;
     color: white;
   }
+  .navbar-nav > li > a {
+    line-height: 50px;
+  }
 }
 
 //** Форма поиска в navbar
@@ -116,6 +119,10 @@ a:focus, a:hover {
       border-bottom-left-radius: 4px;
     }
   }
+}
+.navbar-form {
+  margin-top: 23px;
+  margin-bottom: 23px;
 }
 
 //** Атрибут товара "Цвет" в виде кружка
@@ -301,5 +308,31 @@ a:focus, a:hover {
   }
   .navbar {
     margin-bottom: 0;
+  }
+}
+
+//**Контакты АВ-Центра
+section.wide-banner {
+  background-color: @gray-light;
+  color: white;
+  padding-top: .3em;
+  padding-bottom: .3em;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  .avc-title {
+    font-size: 2.5em;
+    line-height: 1.1em;
+  }
+  .avc-phone {
+  }
+  .avc-city {
+    text-decoration: underline;
+  }
+  .avc-desc {
+    font-weight: 300;
+  }
+  a {
+    color: @brand-primary-dark;
   }
 }
