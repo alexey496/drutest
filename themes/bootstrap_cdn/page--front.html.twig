@@ -92,6 +92,15 @@
   {% endblock %}
 {% endif %}
 
+{# Page Wide Top #}
+{% if page.page_wide_top %}
+    <section class="page-wide-top">
+        <div class="container">
+            {{ page.page_wide_top }}
+        </div>
+    </section>
+{% endif %}
+
 {# Main #}
 {% block main %}
     {# для первой страницы жестко установим стиль container-fluid
@@ -169,4 +178,13 @@
       {{ page.footer }}
     </footer>
   {% endblock %}
+{% endif %}
+
+{# Page Wide Bottom #}
+{% if page.page_wide_bottom %}
+    <section class="page-wide-bottom">
+        <div class="container">
+            {{ page.page_wide_bottom }}
+        </div>
+    </section>
 {% endif %}

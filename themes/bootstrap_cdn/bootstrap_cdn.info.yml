@@ -10,7 +10,7 @@ regions:
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
   header: 'Top Bar'
-  wide_banner: 'Wide Banner'
+  page_wide_top: 'Top Wide'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
@@ -19,6 +19,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+  page_wide_bottom: 'Bottom Wide'
 
 libraries:
   - 'bootstrap_cdn/global-styling'

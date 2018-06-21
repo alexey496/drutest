@@ -5,7 +5,7 @@
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 @gray-dark:              lighten(@gray-base, 20%);   // #333
 @gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 65%); // #a6a6a6
+@gray-light:             lighten(@gray-base, 68%); // #adadad
 @gray-lighter:           lighten(@gray-base, 90%); // #eee
 
 
@@ -311,8 +311,8 @@ a:focus, a:hover {
   }
 }
 
-//**Контакты АВ-Центра
-section.wide-banner {
+//**Контакты АВ-Центра вверху
+section.page-wide-top {
   background-color: @gray-light;
   color: white;
   padding-top: .3em;
@@ -322,7 +322,7 @@ section.wide-banner {
   font-weight: 400;
   .avc-title {
     font-size: 2.5em;
-    line-height: 1.1em;
+    line-height: 1.15em;
   }
   .avc-phone {
   }
@@ -334,5 +334,40 @@ section.wide-banner {
   }
   a {
     color: @brand-primary-dark;
+  }
+}
+.path-frontpage section.page-wide-top {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+
+//**Контакты АВ-Центра внизу
+section.page-wide-bottom {
+  background-color: @gray;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-weight: 100;
+  font-size: 1.2em;
+  .avc-title {
+    font-size: 5em;
+    line-height: 1.15em;
+  }
+  .avc-phone {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .avc-www {
+    font-weight: 300;
+  }
+  .avc-city {
+    text-decoration: underline;
+    margin-top: .9em;
+  }
+  .avc-desc {
+  }
+  a:focus, a:hover {
+    color: white;
   }
 }
