@@ -61,8 +61,8 @@ a:focus, a:hover {
 
 //** Шапка
 .region-navigation a.logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .dropdown-menu>li>a {
   padding: 8px 20px;
@@ -77,7 +77,6 @@ a:focus, a:hover {
   font-weight: 400;
 }
 .navbar {
-  border-bottom: 2px solid @brand-primary;
   .navbar-nav > li > a, .navbar-nav > .open > a, .dropdown-menu > li > a {
     text-transform: uppercase;
     color: @brand-primary;
@@ -102,8 +101,11 @@ a:focus, a:hover {
     color: white;
   }
   .navbar-nav > li > a {
-    line-height: 50px;
+    line-height: 70px;
   }
+}
+.navbar-static-top {
+  border-width: 0;
 }
 
 //** Форма поиска в navbar
@@ -121,8 +123,8 @@ a:focus, a:hover {
   }
 }
 .navbar-form {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 //** Атрибут товара "Цвет" в виде кружка
@@ -319,21 +321,22 @@ section.page-wide-top {
   padding-bottom: .3em;
   margin-top: -20px;
   margin-bottom: 20px;
-  font-weight: 400;
   .avc-title {
     font-size: 2.5em;
     line-height: 1.15em;
   }
   .avc-phone {
+    font-weight: 400;
   }
   .avc-city {
     text-decoration: underline;
+    color: #eee;
   }
   .avc-desc {
     font-weight: 300;
   }
   a {
-    color: @brand-primary-dark;
+    color: @gray-dark;
   }
 }
 .path-frontpage section.page-wide-top {

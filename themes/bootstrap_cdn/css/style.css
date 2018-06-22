@@ -74,8 +74,8 @@ a:hover {
   color: #00b6de;
 }
 .region-navigation a.logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .dropdown-menu > li > a {
   padding: 8px 20px;
@@ -91,9 +91,6 @@ a:hover {
 }
 .navbar-default .navbar-nav > li > a {
   font-weight: 400;
-}
-.navbar {
-  border-bottom: 2px solid #00b6de;
 }
 .navbar .navbar-nav > li > a,
 .navbar .navbar-nav > .open > a,
@@ -134,7 +131,10 @@ a:hover {
   background-color: #00b6de;
 }
 .navbar .navbar-nav > li > a {
-  line-height: 50px;
+  line-height: 70px;
+}
+.navbar-static-top {
+  border-width: 0;
 }
 .navbar #block-fulltext-search {
   float: right!important;
@@ -150,8 +150,8 @@ a:hover {
   border-bottom-left-radius: 4px;
 }
 .navbar-form {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 33px;
+  margin-bottom: 33px;
 }
 .field--name-field-hex {
   border: 1px solid #666;
@@ -319,20 +319,23 @@ section.page-wide-top {
   padding-bottom: .3em;
   margin-top: -20px;
   margin-bottom: 20px;
-  font-weight: 400;
 }
 section.page-wide-top .avc-title {
   font-size: 2.5em;
   line-height: 1.15em;
 }
+section.page-wide-top .avc-phone {
+  font-weight: 400;
+}
 section.page-wide-top .avc-city {
   text-decoration: underline;
+  color: #eee;
 }
 section.page-wide-top .avc-desc {
   font-weight: 300;
 }
 section.page-wide-top a {
-  color: #006278;
+  color: #333333;
 }
 .path-frontpage section.page-wide-top {
   margin-top: 0;
