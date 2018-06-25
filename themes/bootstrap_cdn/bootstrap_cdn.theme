@@ -5,3 +5,15 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Удалим из вывода ненужные теги из HEAD: shortlink и generator
+ */
+function bootstrap_cdn_page_attachments_alter(array &$attachments) {
+  $unneeded_meta = ['shortlink', 'system_meta_generator'];
+  foreach ($attachments['#attached']['html_head'] as $id => $attachment) {
+    if (in_array($attachment[1], $unneeded_meta)) {
+      unset($attachments['#attached']['html_head'][$id]);
+    }
+  }
+}
