@@ -28,7 +28,8 @@
         "drupal/youtube": "^1.0@beta",
         "drupal/views_bootstrap": "^3.0",
         "drush/drush": "^9.2",
-        "drupal/migrate_spreadsheet": "^1.0"
+        "drupal/migrate_spreadsheet": "^1.0",
+        "drupal/simple_sitemap": "^2.12"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
