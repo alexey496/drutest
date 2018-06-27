@@ -15,6 +15,9 @@
 # Don't show directory listings for URLs which map to a directory.
 Options -Indexes
 
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
 # Set the default handler.
 DirectoryIndex index.php index.html index.htm
 
@@ -68,6 +71,21 @@ AddEncoding gzip svgz
 # Various rewrite rules.
 <IfModule mod_rewrite.c>
   RewriteEngine on
+  
+  #склеиваем зеркала
+#  RewriteCond %{HTTP_HOST} ^www.apartaudio.ru
+#  RewriteRule ^(.*)$ http://apartaudio.ru/$1 [R=permanent,L]
+  RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+  
+  #убираем слеш в конце
+  RewriteCond %{REQUEST_FILENAME} !-d 
+  RewriteCond %{REQUEST_URI} ^(.*)/$ 
+  RewriteRule ^(.*)/$ /$1 [R=301,L]
+ 
+  #убираем переменную от старого сайта q=
+  RewriteCond %{QUERY_STRING} ^q= [NC]
+  RewriteRule ^(.*)$ %{REQUEST_URI}? [R=301,L]
 
   # Set "protossl" to "s" if we were accessed via https://.  This is used later
   # if you enable "www." stripping or enforcement, in order to ensure that
@@ -153,6 +171,13 @@ AddEncoding gzip svgz
   # Deny access to any other PHP files that do not match the rules above.
   # Specifically, disallow autoload.php from being served directly.
   RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
+ 
+ 
+  #убираем index во всех видах со стартовой страницы
+  RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.(php|html|htm)\ HTTP/ 
+  RewriteRule ^(.*)index\.(php|html|htm)$ http://apartaudio.ru/$1 [R=301,L]
+  
+  
 
   # Rules to correctly serve gzip compressed CSS and JS files.
   # Requires both mod_rewrite and mod_headers to be enabled.
@@ -187,3 +212,5 @@ AddEncoding gzip svgz
   # Disable Proxy header, since it's an attack vector.
   RequestHeader unset Proxy
 </IfModule>
+php_value default_charset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
