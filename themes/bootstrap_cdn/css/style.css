@@ -220,6 +220,9 @@ a:hover {
 .commerce-product--full .margin-btm {
   margin-bottom: 4em;
 }
+.commerce-product--full .field--type-youtube {
+  margin-top: 1em;
+}
 .carousel-control:hover {
   color: #00b6de;
 }
