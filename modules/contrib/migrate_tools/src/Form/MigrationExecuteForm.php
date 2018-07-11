@@ -60,7 +60,6 @@ class MigrationExecuteForm extends FormBase {
     return $form;
   }
 
-
   /**
    * Get Operations.
    */
@@ -123,7 +122,6 @@ class MigrationExecuteForm extends FormBase {
     // https://www.drupal.org/project/migrate_tools/issues/2924298.
     return $form;
   }
-
 
   /**
    * {@inheritdoc}

@@ -161,7 +161,7 @@ class MigrationListBuilder extends ConfigEntityListBuilder implements EntityHand
       $row['status'] = $migration->getStatusLabel();
     }
     catch (PluginException $e) {
-      $this->logger->warning('Migration entity id %id is malformed', ['%id' => $migration_entity->id()]);
+      $this->logger->warning('Migration entity id %id is malformed: %orig', ['%id' => $migration_entity->id(), '%orig' => $e->getMessage()]);
       return NULL;
     }
 
