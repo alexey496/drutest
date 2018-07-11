@@ -784,9 +784,9 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'apart',
-  'username' => 'root',
-  'password' => 'root',
+  'database' => 'alex496_apart8',
+  'username' => 'alex496_apart8',
+  'password' => 'yamaha496',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
