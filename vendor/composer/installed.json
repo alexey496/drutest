@@ -393,17 +393,17 @@
     },
     {
         "name": "commerceguys/intl",
-        "version": "v1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/commerceguys/intl.git",
-            "reference": "44abbda26e6d2d51021ad49766429b020c053151"
+            "reference": "22156e447530d6ebd387bfee51ef1ae2c70a5ff0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/commerceguys/intl/zipball/44abbda26e6d2d51021ad49766429b020c053151",
-            "reference": "44abbda26e6d2d51021ad49766429b020c053151",
+            "url": "https://api.github.com/repos/commerceguys/intl/zipball/22156e447530d6ebd387bfee51ef1ae2c70a5ff0",
+            "reference": "22156e447530d6ebd387bfee51ef1ae2c70a5ff0",
             "shasum": ""
         },
         "require": {
@@ -413,7 +413,7 @@
             "mikey179/vfsstream": "1.*",
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2018-05-28T00:56:04+00:00",
+        "time": "2018-06-21T14:03:04+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1798,24 +1798,24 @@
     },
     {
         "name": "drupal/commerce",
-        "version": "2.7.0",
-        "version_normalized": "2.7.0.0",
+        "version": "2.8.0",
+        "version_normalized": "2.8.0.0",
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/commerce",
-            "reference": "8.x-2.7"
+            "reference": "8.x-2.8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.7.zip",
-            "reference": "8.x-2.7",
-            "shasum": "e1f5c30f4899913e7e1a8200e8f65b422e50d451"
+            "url": "https://ftp.drupal.org/files/projects/commerce-8.x-2.8.zip",
+            "reference": "8.x-2.8",
+            "shasum": "4313bc3e409081b27e05448803565e39270bb75a"
         },
         "require": {
             "commerceguys/intl": "^1.0.0",
             "drupal/address": "^1.4",
             "drupal/core": "~8.5",
-            "drupal/entity": "^1.0-beta3",
+            "drupal/entity": "^1.0-beta4",
             "drupal/entity_reference_revisions": "~1.0",
             "drupal/inline_entity_form": "^1.0-rc1",
             "drupal/profile": "~1.0",
@@ -1838,8 +1838,8 @@
                 "dev-2.x": "2.x-dev"
             },
             "drupal": {
-                "version": "8.x-2.7",
-                "datestamp": "1527530416",
+                "version": "8.x-2.8",
+                "datestamp": "1531841621",
                 "security-coverage": {
                     "status": "covered",
                     "message": "Covered by Drupal's security advisory policy"

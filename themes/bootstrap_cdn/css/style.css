@@ -111,6 +111,7 @@ a:hover {
 .navbar .navbar-nav > .open > a.is-active:focus,
 .navbar .dropdown-menu > li > a.is-active:focus {
   color: white;
+  background-color: #00b6de;
 }
 .navbar .navbar-nav > li > a:hover,
 .navbar .navbar-nav > .open > a:hover,
@@ -118,7 +119,7 @@ a:hover {
 .navbar .navbar-nav > li > a:focus,
 .navbar .navbar-nav > .open > a:focus,
 .navbar .dropdown-menu > li > a:focus {
-  background-color: #00b6de;
+  background-color: #45ddff;
   color: #006278;
 }
 .navbar .navbar-nav li.active > a {

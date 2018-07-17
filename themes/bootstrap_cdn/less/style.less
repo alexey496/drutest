@@ -1,5 +1,6 @@
 @brand-primary: #00b6de;
 @brand-primary-dark: darken(@brand-primary, 20%);
+@brand-primary-light: lighten(@brand-primary, 20%);
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
@@ -83,12 +84,13 @@ a:focus, a:hover {
     &.is-active  {
       &:hover, &:focus {
         color: white;
+        background-color: @brand-primary;
       }
       background-color: @brand-primary;
       color: white;
     }
     &:hover, &:focus {
-      background-color: @brand-primary;
+      background-color: @brand-primary-light;
       color: @brand-primary-dark
     }
   }
