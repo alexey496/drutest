@@ -30,7 +30,8 @@ use Drupal\user\UserInterface;
  *   handlers = {
  *     "event" = "Drupal\commerce_product\Event\ProductVariationEvent",
  *     "storage" = "Drupal\commerce_product\ProductVariationStorage",
- *     "access" = "Drupal\commerce\EmbeddedEntityAccessControlHandler",
+ *     "access" = "Drupal\commerce_product\ProductVariationAccessControlHandler",
+ *     "permission_provider" = "Drupal\commerce_product\ProductVariationPermissionProvider",
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "views_data" = "Drupal\commerce\CommerceEntityViewsData",
  *     "form" = {
@@ -128,6 +129,22 @@ class ProductVariation extends CommerceContentEntityBase implements ProductVaria
   public function setTitle($title) {
     $this->set('title', $title);
     return $this;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getListPrice() {
+    if (!$this->get('list_price')->isEmpty()) {
+      return $this->get('list_price')->first()->toPrice();
+    }
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setListPrice(Price $list_price) {
+    return $this->set('list_price', $list_price);
   }
 
   /**
@@ -412,9 +429,24 @@ class ProductVariation extends CommerceContentEntityBase implements ProductVaria
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['list_price'] = BaseFieldDefinition::create('commerce_price')
+      ->setLabel(t('List price'))
+      ->setDescription(t('The list price.'))
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'commerce_price_default',
+        'weight' => -1,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'commerce_list_price',
+        'weight' => -1,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['price'] = BaseFieldDefinition::create('commerce_price')
       ->setLabel(t('Price'))
-      ->setDescription(t('The variation price'))
+      ->setDescription(t('The price'))
       ->setRequired(TRUE)
       ->setDisplayOptions('view', [
         'label' => 'above',

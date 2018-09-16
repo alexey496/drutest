@@ -104,7 +104,7 @@ class CoreViewsContextualFilter extends CoreViewsFacetSourceBase {
    * {@inheritdoc}
    */
   public function fillFacetsWithResults(array $facets) {
-    foreach ($facets as $facet_id => $facet) {
+    foreach ($facets as $facet) {
       if ($facet->getOnlyVisibleWhenFacetSourceIsVisible()) {
         // Ignore currently unnecessary facets.
         /** @var \Drupal\facets\FacetSource\FacetSourcePluginInterface $facet_source */
@@ -237,6 +237,9 @@ class CoreViewsContextualFilter extends CoreViewsFacetSourceBase {
    *
    * @return \Drupal\core_views_facets\CoreViewsFacetsFilterTypeInterface
    *   The loaded filter type plugin or null.
+   *
+   * @throws \Drupal\Component\Plugin\Exception\PluginException
+   *   If the instance cannot be created, such as if the ID is invalid.
    */
   protected function loadFacetCoreViewsContextualFilterTypePlugin(ArgumentPluginBase $argument) {
     $filter_type_definitions = $this->contextualFilterTypePluginManager->getDefinitions();
