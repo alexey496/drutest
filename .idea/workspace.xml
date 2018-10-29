@@ -34,8 +34,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+            <state relative-caret-position="432">
+              <caret line="337" column="16" lean-forward="true" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -70,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/themes/bootstrap_cdn/field--commerce-product-variation--attribute-color.html.twig" />
         <option value="$PROJECT_DIR$/modules/custom/block_with_facets/block_with_facets.module" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/templates/menu.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/templates/menu--account.html.twig" />
@@ -120,6 +119,7 @@
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/commerce-product--default--full.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap/templates/system/html.html.twig" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/templates/html.html.twig" />
+        <option value="D:/Downloads/settings.php/settings.php" />
         <option value="$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less" />
       </list>
     </option>
@@ -165,7 +165,6 @@
       <path value="$PROJECT_DIR$/vendor/jcalderonzumba/gastonjs" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/wikimedia/composer-merge-plugin" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
@@ -210,7 +209,6 @@
       <path value="$PROJECT_DIR$/vendor/behat/mink" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/stack/builder" />
-      <path value="$PROJECT_DIR$/vendor/drupal/coder" />
       <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
       <path value="$PROJECT_DIR$/vendor/easyrdf/easyrdf" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -257,9 +255,12 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="661" />
     <option name="y" value="-4" />
     <option name="width" value="1398" />
@@ -297,6 +298,24 @@
             <path>
               <item name="apart" type="b2602c69:ProjectViewProjectNode" />
               <item name="apart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apart" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apart" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="apart" type="462c0819:PsiDirectoryNode" />
+              <item name="sites" type="462c0819:PsiDirectoryNode" />
+              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="apart" type="b2602c69:ProjectViewProjectNode" />
@@ -441,13 +460,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224820000" />
+    <option name="totallyTimeSpent" value="225654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.225625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22552083" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32957393" />
@@ -460,13 +479,25 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38471177" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.225625" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32985657" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Messages" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32957393" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38471177" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -510,13 +541,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/ajgl/breakpoint-twig-extension/src/BreakpointExtension.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -798,10 +822,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Downloads/settings.php/settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="775" lean-forward="true" selection-start-line="775" selection-end-line="775" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="86" column="41" selection-start-line="86" selection-start-column="41" selection-end-line="86" selection-end-column="41" />
+        <state relative-caret-position="432">
+          <caret line="337" column="16" lean-forward="true" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,6 @@
       <path value="$PROJECT_DIR$/vendor/jcalderonzumba/gastonjs" />
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/wikimedia/composer-merge-plugin" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
@@ -62,7 +61,6 @@
       <path value="$PROJECT_DIR$/vendor/behat/mink" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
       <path value="$PROJECT_DIR$/vendor/stack/builder" />
-      <path value="$PROJECT_DIR$/vendor/drupal/coder" />
       <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
       <path value="$PROJECT_DIR$/vendor/easyrdf/easyrdf" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
@@ -109,6 +107,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
       <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

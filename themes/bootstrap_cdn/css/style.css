@@ -338,6 +338,9 @@ section.page-wide-top .avc-city {
 section.page-wide-top .avc-desc {
   font-weight: 300;
 }
+section.page-wide-top .social-head {
+  margin: .2em;
+}
 section.page-wide-top a {
   color: #333333;
 }
