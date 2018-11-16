@@ -31,13 +31,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
-              <caret line="337" column="16" lean-forward="true" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
+              <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yandex_bdf1eafda594905e.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yandex_bdf1eafda594905e.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -58,6 +63,7 @@
       <find>.commerce-product--full</find>
       <find>@gray-light</find>
       <find>.navbar-form</find>
+      <find>avc-</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/modules/contrib/facets</dir>
@@ -260,7 +266,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="661" />
     <option name="y" value="-4" />
     <option name="width" value="1398" />
@@ -298,63 +304,6 @@
             <path>
               <item name="apart" type="b2602c69:ProjectViewProjectNode" />
               <item name="apart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="sites" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap_cdn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap_cdn" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -460,7 +409,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225654000" />
+    <option name="totallyTimeSpent" value="226890000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,14 +490,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-kernel/HttpKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/helloworld.routing.yml" />
     <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/src/Controller/HelloworldController.php" />
     <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/helloworld.services.yml" />
     <entry file="file://$PROJECT_DIR$/modules/custom/helloworld/src/Routing/RouteSubscriber.php" />
@@ -829,12 +770,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1954" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="337" column="16" lean-forward="true" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
+          <caret line="337" column="16" selection-start-line="337" selection-start-column="16" selection-end-line="337" selection-end-column="16" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yandex_bdf1eafda594905e.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
