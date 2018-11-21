@@ -1,0 +1,14 @@
+name: 'Existing Values Autocomplete Widget'
+type: module
+description: 'Provides a widget for text fields that supplies an autocomplete callback with any previously entered (existing) values for the field.'
+# core: 8.x
+package: 'Other'
+dependencies:
+  - field
+  - text
+
+# Information added by Drupal.org packaging script on 2018-09-18
+version: '8.x-1.0'
+core: '8.x'
+project: 'existing_values_autocomplete_widget'
+datestamp: 1537288383
