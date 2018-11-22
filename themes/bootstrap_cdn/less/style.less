@@ -68,9 +68,6 @@ a:focus, a:hover {
 .dropdown-menu>li>a {
   padding: 8px 20px;
 }
-.dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-  background-color: @brand-primary;
-}
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
   background-color: @brand-primary;
 }
@@ -81,7 +78,7 @@ a:focus, a:hover {
   .navbar-nav > li > a, .navbar-nav > .open > a, .dropdown-menu > li > a {
     text-transform: uppercase;
     color: @brand-primary;
-    &.is-active  {
+    &.active-trail  {
       &:hover, &:focus {
         color: white;
         background-color: @brand-primary;
@@ -94,7 +91,7 @@ a:focus, a:hover {
       color: @brand-primary-dark
     }
   }
-  .navbar-nav li.active > a {
+  .navbar-nav li.active-trail > a {
     &:hover, &:focus {
       color: white;
       background-color: @brand-primary;

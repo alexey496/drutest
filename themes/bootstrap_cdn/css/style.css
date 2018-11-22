@@ -80,10 +80,6 @@ a:hover {
 .dropdown-menu > li > a {
   padding: 8px 20px;
 }
-.dropdown-menu > .active > a:focus,
-.dropdown-menu > .active > a:hover {
-  background-color: #00b6de;
-}
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:focus,
 .dropdown-menu > .active > a:hover {
@@ -98,18 +94,18 @@ a:hover {
   text-transform: uppercase;
   color: #00b6de;
 }
-.navbar .navbar-nav > li > a.is-active,
-.navbar .navbar-nav > .open > a.is-active,
-.navbar .dropdown-menu > li > a.is-active {
+.navbar .navbar-nav > li > a.active-trail,
+.navbar .navbar-nav > .open > a.active-trail,
+.navbar .dropdown-menu > li > a.active-trail {
   background-color: #00b6de;
   color: white;
 }
-.navbar .navbar-nav > li > a.is-active:hover,
-.navbar .navbar-nav > .open > a.is-active:hover,
-.navbar .dropdown-menu > li > a.is-active:hover,
-.navbar .navbar-nav > li > a.is-active:focus,
-.navbar .navbar-nav > .open > a.is-active:focus,
-.navbar .dropdown-menu > li > a.is-active:focus {
+.navbar .navbar-nav > li > a.active-trail:hover,
+.navbar .navbar-nav > .open > a.active-trail:hover,
+.navbar .dropdown-menu > li > a.active-trail:hover,
+.navbar .navbar-nav > li > a.active-trail:focus,
+.navbar .navbar-nav > .open > a.active-trail:focus,
+.navbar .dropdown-menu > li > a.active-trail:focus {
   color: white;
   background-color: #00b6de;
 }
@@ -122,12 +118,12 @@ a:hover {
   background-color: #45ddff;
   color: #006278;
 }
-.navbar .navbar-nav li.active > a {
+.navbar .navbar-nav li.active-trail > a {
   background-color: #00b6de;
   color: white;
 }
-.navbar .navbar-nav li.active > a:hover,
-.navbar .navbar-nav li.active > a:focus {
+.navbar .navbar-nav li.active-trail > a:hover,
+.navbar .navbar-nav li.active-trail > a:focus {
   color: white;
   background-color: #00b6de;
 }
