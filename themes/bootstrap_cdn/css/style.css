@@ -167,7 +167,7 @@ a:hover {
 .commerce-product-teaser div.field--label {
   font-weight: 300;
   font-size: .9em;
-  color: #888;
+  color: #808080;
 }
 .commerce-product-teaser .field--name-field-product-variation-img {
   border-bottom: 1px solid #e6e6e6;
@@ -257,6 +257,27 @@ a:hover {
 }
 .facet-wrapper ul li.facet-item {
   list-style: none;
+}
+.block-facets-summary > ul {
+  padding: 0;
+}
+.block-facets-summary > ul > li {
+  display: inline-block;
+  margin-right: .5em;
+  margin-bottom: .5em;
+}
+.block-facets-summary > ul > li a {
+  padding: .5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #808080;
+  display: block;
+}
+.block-facets-summary > ul > li a:hover,
+.block-facets-summary > ul > li a:focus {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
 }
 .view-display-id-page_1 .table > tbody > tr > td {
   vertical-align: middle;

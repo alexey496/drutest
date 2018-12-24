@@ -65,6 +65,9 @@
 
   {% if rows %}
     <div class="view-content col-sm-9 clearfix"> {# добавил классы ' col-sm-9 clearfix' #}
+      {% if footer %} {# Вывел футер в контенте, это для отображения блока с выбранными фасетами. Родной вывод футера (ниже) закомментировал #}
+            {{ footer }}
+      {% endif %}
       {{ rows }}
     </div>
   {% elseif empty %}
@@ -84,11 +87,13 @@
   {% if more %}
     {{ more }}
   {% endif %}
+  {#
   {% if footer %}
     <div class="view-footer">
       {{ footer }}
     </div>
   {% endif %}
+  #}
   {% if feed_icons %}
     <div class="feed-icons">
       {{ feed_icons }}
