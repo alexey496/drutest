@@ -29,6 +29,14 @@
             {{ product.variations }}
         {% endif %}
     </div>
+    {% if product.variation_price.0['#number'] > 0 %} {# цену и наличие товара выводим только в том случае, если для товара установлена цена #}
+        <div class="price-wrapper">
+            <div class="field--name-price">{{ product.variation_price.0['#number']|number_format(0, ',', ' ') }}&nbsp;₽</div> {# установим формат вывода цены без копеек и с пробелом в качестве разделителя тысяч #}
+            {% if product.variation_field_stock.0['#markup'] > 0 %} {# если на складе есть товар #}
+                <div class="stock-available"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>&nbsp;Товар в наличии</div> {# то вывести сообщение об этом #}
+            {% endif %}
+        </div>
+    {% endif %}
     <div>{{ product.variation_field_product_variation_img }}</div>
     <div class="row margin-btm">
         <div class="col-sm-5">

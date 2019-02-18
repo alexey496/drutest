@@ -25,7 +25,12 @@
         оригинал:
         {{- product|without('variation_attributes') -}}
         #}
-        {{ product.variation_field_product_variation_img }} {# картинка товара #}
+        <div class="img-wrapper">
+            {{ product.variation_field_product_variation_img }} {# картинка товара #}
+            {% if product.variation_price.0['#number'] > 0 %} {# цену выводим только в том случае, если для товара установлена цена #}
+                <div class="field--name-price"><div class="triangle"></div>{{ product.variation_price.0['#number']|number_format(0, ',', ' ') }}&nbsp;₽</div> {# установим формат вывода цены без копеек и с пробелом в качестве разделителя тысяч #}
+            {% endif %}
+        </div>
         {{ product.variations }}
         {{ product.title }} {# заголовок товара #}
         {{ product.field_short_desc }}
