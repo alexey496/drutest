@@ -244,10 +244,7 @@ a:hover {
   font-size: 39px;
   margin-top: 20px;
   margin-bottom: 10px;
-  color: #aaa;
-}
-.commerce-product--full .price-wrapper .stock-available {
-  color: #aaa;
+  color: #00b6de;
 }
 .commerce-product--full .price-wrapper .stock-available span.glyphicon {
   color: #00b6de;
