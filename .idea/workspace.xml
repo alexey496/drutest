@@ -35,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
-              <caret line="239" column="3" lean-forward="true" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+              <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -324,7 +324,7 @@
       <path value="$PROJECT_DIR$/vendor/typo3/phar-stream-wrapper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="661" />
     <option name="y" value="-4" />
     <option name="width" value="1398" />
@@ -497,12 +497,12 @@
       <workItem from="1549727937507" duration="16802000" />
       <workItem from="1549782828706" duration="8635000" />
       <workItem from="1550079567749" duration="4283000" />
-      <workItem from="1550514828406" duration="58000" />
+      <workItem from="1550514828406" duration="657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276618000" />
+    <option name="totallyTimeSpent" value="277217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -866,7 +866,7 @@
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
-          <caret line="239" column="3" lean-forward="true" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+          <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
         </state>
       </provider>
     </entry>
