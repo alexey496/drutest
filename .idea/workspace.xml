@@ -31,11 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
               <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="price_update.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/price_update.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="8" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -324,7 +333,7 @@
       <path value="$PROJECT_DIR$/vendor/typo3/phar-stream-wrapper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="661" />
     <option name="y" value="-4" />
     <option name="width" value="1398" />
@@ -344,45 +353,6 @@
             <path>
               <item name="apart" type="b2602c69:ProjectViewProjectNode" />
               <item name="apart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap_cdn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apart" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap_cdn" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -497,12 +467,12 @@
       <workItem from="1549727937507" duration="16802000" />
       <workItem from="1549782828706" duration="8635000" />
       <workItem from="1550079567749" duration="4283000" />
-      <workItem from="1550514828406" duration="657000" />
+      <workItem from="1550514828406" duration="1271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="277217000" />
+    <option name="totallyTimeSpent" value="277831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -571,13 +541,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/views-view-unformatted--accessories--page-1.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/bootstrap_cdn/templates/file-link.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -867,6 +830,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="239" column="3" selection-start-line="239" selection-start-column="3" selection-end-line="239" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/price_update.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="46" />
         </state>
       </provider>
     </entry>
