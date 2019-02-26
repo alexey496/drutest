@@ -1,0 +1,322 @@
+[33mcommit 6f272b6c37c94c3a85ae839513e6e7b74fc19481[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Feb 21 21:43:15 2019 +0300
+
+    core update
+
+[33mcommit f586ff416d085d175ce2f7c85f3ed3e1fd9360a4[m
+Merge: f3b6bdc c18ee64
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Feb 21 20:28:35 2019 +0300
+
+    ggg
+
+[33mcommit f3b6bdca98e4ee247b252129da2d44ecae53a1b1[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Feb 21 20:21:55 2019 +0300
+
+    hhhh
+
+[33mcommit c18ee64d64a1e1324edb99c6f8094d76ef1fe584[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Feb 21 20:18:00 2019 +0300
+
+    ЭорплоплопЭ
+
+[33mcommit fb5d6d1282a12ccd5dd194eb04568ee854924357[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Feb 19 22:37:55 2019 +0300
+
+    microdata
+
+[33mcommit eb226c887e06e0a3a3ae9ba0efd96298c52f18ed[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Feb 19 20:33:50 2019 +0300
+
+    delete prs
+
+[33mcommit 019f2fc9660817b6af1297d2bc11dc4261b9a5d2[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Feb 19 20:30:35 2019 +0300
+
+    idea
+
+[33mcommit cb56fe92e010a6e8373472eedbe2c0b2eb47a1db[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Feb 19 20:12:49 2019 +0300
+
+    tt
+
+[33mcommit 378651c276f6307822c3f748646cfe17ece05507[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Feb 18 22:15:15 2019 +0300
+
+    test
+
+[33mcommit 50217f6972051a0ef7d69587a4ccab67a2dcc8c5[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Feb 18 22:10:39 2019 +0300
+
+    mysql
+
+[33mcommit edd9890d53471466278b4bb709bb14f8811bc954[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Feb 18 21:37:08 2019 +0300
+
+    mysqldump
+
+[33mcommit a96e3cc8d5dbe01b1b99e262c56b3047b9f516c2[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Feb 18 21:27:22 2019 +0300
+
+    prices
+
+[33mcommit a268d126616c1934cfaff87d546dafbb78be3364[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Feb 9 17:04:26 2019 +0300
+
+    price update sh
+
+[33mcommit 768a9c0564fb5111153402bead870c65dc9684c2[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Feb 9 16:28:30 2019 +0300
+
+    sh script
+
+[33mcommit ea154d6264b5c4698796f6f45c10594f3df9482f[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Feb 8 23:23:15 2019 +0300
+
+    cron script
+
+[33mcommit 7c89da4349b0d4f8899de01207266114ec352370[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Feb 8 21:04:52 2019 +0300
+
+    migrate price update
+
+[33mcommit eaf4f1d70ac3bc4bbdba22e0b12531b1997f3b3c[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Feb 8 20:20:30 2019 +0300
+
+    migrate prices update
+
+[33mcommit 044627740f822990a95c0a49ff8985095f384ed0[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Feb 8 19:26:47 2019 +0300
+
+    ttt
+
+[33mcommit adf79a2b6d22bde2655e0d4ca021b45e0622a2f7[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Jan 31 20:38:35 2019 +0300
+
+    core update
+
+[33mcommit f0df55b624df9eec3ec543bbb0a9565e4e39c9a1[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Jan 31 10:15:56 2019 +0300
+
+    mysqldump
+
+[33mcommit 3d583e1fe6327dd214c3e7b50db4220daa38d5ef[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Dec 28 19:38:37 2018 +0300
+
+    files
+
+[33mcommit e5c2c67c74be3834fe275d00894c5711c026c0c9[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Dec 26 11:36:02 2018 +0300
+
+    file
+
+[33mcommit 8a82ec2030ad2cfefd0b7a22158e1f403cd62118[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Dec 25 21:36:14 2018 +0300
+
+    update core
+
+[33mcommit f06aea42fec9dbbe42ce618c1cde2667372f6dd5[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Dec 24 21:42:20 2018 +0300
+
+    summary facets
+
+[33mcommit 94b27e11565e1ffde01f382e32de6e8d25b00a91[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Nov 22 14:24:30 2018 +0300
+
+    css
+
+[33mcommit 30765878c39e5ad8d46c3158011eaaf1c77591d8[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Nov 21 22:48:22 2018 +0300
+
+    delete module existing_values_autocomplete_widget
+
+[33mcommit 5e2e1180d9a7570bb16b60c6fa54dfa44f20807f[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Nov 21 21:49:09 2018 +0300
+
+    htaccess
+
+[33mcommit 7b57a22f9abcf716037abf2a817210f44e1339a6[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Nov 19 23:10:25 2018 +0300
+
+    new products
+
+[33mcommit 657d1c55d24c78f702f3d00db2421241400318ed[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Nov 17 20:48:50 2018 +0300
+
+    theme update
+
+[33mcommit 8269f1a3acb2178429472450fc5a67fb95f5e575[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Nov 17 13:07:29 2018 +0300
+
+    pm7400mkii manual
+
+[33mcommit 8f17070ce8ad4c81453e62a84df8a53bb8852c35[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Nov 17 12:36:51 2018 +0300
+
+    core update
+
+[33mcommit dc658c082a2852096889d7bef89afbd0a2c87e42[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Nov 16 22:24:41 2018 +0300
+
+    pdf files
+
+[33mcommit 121583babb7a0314f0bd12add56972a8cf18e12d[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Oct 29 19:40:31 2018 +0300
+
+    core update
+
+[33mcommit 9aff0b0ffdff16c3d84491605afce19aea378dc5[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sun Sep 16 09:56:55 2018 +0300
+
+    update core
+
+[33mcommit 0501fd67421eb4cf411ce2e28c051c922e9c321a[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Jul 17 19:50:08 2018 +0300
+
+    commerce update
+
+[33mcommit b86462148b90cfa4bd7cb3cfdd2a97b8884ee00f[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jul 11 21:42:56 2018 +0300
+
+    core & migrate_tools & facets update
+
+[33mcommit 449d0b001bd337a29482a1d4e7db011e84646533[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jul 11 20:26:03 2018 +0300
+
+    from hosting
+
+[33mcommit 2a03598825f75ba54b9c61378e2677712c062ebc[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sun Jul 1 00:25:14 2018 +0300
+
+    dump
+
+[33mcommit 5d3fe4c24d825f441211afa2cc37f02b38189e91[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sun Jul 1 00:06:35 2018 +0300
+
+    ya & google scripts
+
+[33mcommit 6f52f6dc05d171c5f173242736976136e7c499f3[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sat Jun 30 21:11:43 2018 +0300
+
+    dowloads files & seoadmin
+
+[33mcommit 3abe89afdb3345d07b263bf0847b34638bb264a3[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 27 16:54:48 2018 +0300
+
+    pass & aliases
+
+[33mcommit 9860619f9ff5555a3200905f368db545acbc31d9[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 27 15:10:57 2018 +0300
+
+    aliases
+
+[33mcommit aafd08cd2d331dd2d20031b47b6550938960d076[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 27 14:41:23 2018 +0300
+
+    htaccess
+
+[33mcommit 1f61bce12fa7d88ea2551041b47a81903898048f[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Tue Jun 26 21:46:09 2018 +0300
+
+    simple sitemap xml
+
+[33mcommit 6b97be2253863f959e48425c3f660874fe8659ad[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Jun 25 21:15:02 2018 +0300
+
+    remove title shortlink & generator in head
+
+[33mcommit a240c26d1ec5dc98cc31938745da130b43807795[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Fri Jun 22 18:32:47 2018 +0300
+
+    top wide banner
+
+[33mcommit 44c6fa3433d5208363df3f92ae1da57d1d32c615[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Thu Jun 21 21:15:32 2018 +0300
+
+    top & bottom wide blocks
+
+[33mcommit ea1bccc87063a0c895b21c919d9143cb036c31ff[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 20 23:00:22 2018 +0300
+
+    font
+
+[33mcommit 6b84519df2f7a806870fc938b578d0395d7d19fb[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 20 22:50:00 2018 +0300
+
+    update core to 8.5.4
+
+[33mcommit 3ac78884a09465b4932d7dc246a54ee5440413f7[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 6 21:40:04 2018 +0300
+
+    css
+
+[33mcommit 8ffb8a70a7b31d002abe58981d47b22ecc8df0f0[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 6 20:22:09 2018 +0300
+
+    mysqldump
+
+[33mcommit c1f55c2496b21a36b84e5700cbf27f6327b30863[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Wed Jun 6 20:16:46 2018 +0300
+
+    theme update
+
+[33mcommit 1d4004255d3462e19c8c38d75ed46dd0b3673b18[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Mon Jun 4 19:25:58 2018 +0300
+
+    css
+
+[33mcommit 8f94bc0e85c2c61c5654f25cf614c3635397cac9[m
+Author: alexey496 <alexey496@mail.ru>
+Date:   Sun 
