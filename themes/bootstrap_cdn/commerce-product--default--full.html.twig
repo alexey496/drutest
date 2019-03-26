@@ -24,6 +24,8 @@
     {{- product|without('variation_attributes') -}}
     #}
     <div class="variations-wrapper">
+        <meta itemprop="brand" content="Apart">
+        <meta itemprop="sku" content="{{ product.variation_title[0]['#title']['#context']['value'] }}">
         <h1 itemprop="name">{{ product.variation_title[0]['#title']['#context']['value'] }}</h1>
         {% if product.variations[1] is defined %} {# выведем варианты товара только в том случае, если их более одного#}
             {{ product.variations }}
@@ -31,7 +33,11 @@
     </div>
     {% if product.variation_price.0['#number'] > 0 %} {# цену и наличие товара выводим только в том случае, если для товара установлена цена #}
         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="price-wrapper">
-            <div itemprop="price" content="{{ product.variation_price.0['#number']|number_format(0, '', '') }}" class="field--name-price">{{ product.variation_price.0['#number']|number_format(0, ',', ' ') }}&nbsp;<span itemprop="priceCurrency" content="RUB">₽</span></div> {# установим формат вывода цены без копеек и с пробелом в качестве разделителя тысяч #}
+            <div class="field--name-price">{{ product.variation_price.0['#number']|number_format(0, ',', ' ') }}&nbsp;₽</div> {# установим формат вывода цены без копеек и с пробелом в качестве разделителя тысяч #}
+            <meta itemprop="priceCurrency" content="RUB"/>
+            <meta itemprop="price" content="{{ product.variation_price.0['#number']|number_format(0, '', '') }}">
+            <link itemprop="itemCondition" href="http://schema.org/NewCondition"/>
+            <link itemprop="url" href="{{ url('<current>') }}"/>
             {% if product.variation_field_stock.0['#markup'] > 0 %} {# если на складе есть товар #}
                 <link itemprop="availability" href="http://schema.org/InStock">
                 <div class="stock-available"><span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>&nbsp;Товар в наличии</div> {# то вывести сообщение об этом #}
