@@ -65,6 +65,7 @@ return array(
     'Grasmash\\Expander\\' => array($vendorDir . '/grasmash/expander/src'),
     'Goutte\\' => array($vendorDir . '/fabpot/goutte/Goutte'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
+    'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/EmailValidator'),
     'Drush\\Internal\\' => array($vendorDir . '/drush/drush/internal-copy'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),
     'Drupal\\Driver\\' => array($baseDir . '/drivers/lib/Drupal/Driver'),
