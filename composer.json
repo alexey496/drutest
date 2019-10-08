@@ -14,7 +14,7 @@
         "drupal/search_api": "^1.5",
         "drupal/tvi": "^1.0@beta",
         "drupal/taxonomy_menu": "^3.3",
-        "drupal/migrate_source_csv": "^2.0",
+        "drupal/migrate_source_csv": "^2.2.0",
         "drupal/image_effects": "^2.0",
         "drupal/twig_xdebug": "^1.0",
         "drupal/core_views_facets": "^1.0@alpha",
@@ -29,7 +29,7 @@
         "drupal/views_bootstrap": "^3.0",
         "drush/drush": "^9.2",
         "drupal/migrate_spreadsheet": "^1.0",
-        "drupal/simple_sitemap": "^2.12"
+        "drupal/simple_sitemap": "^3.4.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
